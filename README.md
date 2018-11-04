@@ -36,7 +36,13 @@ Re-run the check out if you have still problems:
 $ biual checkout
 ```
 
-Set the flag showUntrackedFiles to no on this specific (local) repository:
+Pull submodules (zgen, neovim plugins etc.):
+
+```bash
+$ biual submodule update --init --recursive
+```
+
+Set the flag showUntrackedFiles to no for biual git repository:
 
 ```bash
 $ biual config --local status.showUntrackedFiles no
