@@ -4,10 +4,12 @@ My fine .dotfiles for Arch Linux.
 
 ## Install
 
+Open terminal and type:
+
 ```bash
-git clone --bare <git-repo-url> $HOME/.config/biual-git
-alias biual='/usr/bin/git --git-dir=$HOME/.config/biual-git/ --work-tree=$HOME'
-biual checkout
+$ git clone --bare <git-repo-url> $HOME/.config/biual-git
+$ alias biual='/usr/bin/git --git-dir=$HOME/.config/biual-git/ --work-tree=$HOME'
+$ biual checkout
 ```
 
 If it will fail and show message like this:
@@ -30,39 +32,39 @@ $ xargs -I{} mv {} .config/config-backup/{}
 
 Re-run the check out if you have still problems:
 
-```
-biual checkout
+```bash
+$ biual checkout
 ```
 
 Set the flag showUntrackedFiles to no on this specific (local) repository:
 
-```
-biual config --local status.showUntrackedFiles no
+```bash
+$ biual config --local status.showUntrackedFiles no
 ```
 
 ### Dependencies
 
 Arch official repository packages:
 
-```
-sudo pacman -S i3-gaps compton termite neovim ranger xclip qutebrowser zathura pamixer rofi nitrogen ttf-font-awesome ttf-dejavu zsh polkit-gnome unclutter xcape
+```bash
+$ sudo pacman -S i3-gaps compton termite neovim ranger xclip qutebrowser zathura pamixer rofi nitrogen ttf-font-awesome ttf-dejavu zsh polkit-gnome unclutter xcape
 ```
 
 AUR packages ([install manually](https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_packages) or using AUR helper like [yay](https://github.com/Jguer/yay)):
 
-```
-yay -S light i3lock-fancy-git redshift-minimal ttf-dejavu-sans-mono-powerline-git polybar
+```bash
+$ yay -S light i3lock-fancy-git redshift-minimal ttf-dejavu-sans-mono-powerline-git polybar
 ```
 
 ### Finished
 That's it, biual dotfiles are ready! It is recommended to restart your computer. Also now you can type `biual` commands to update dotfiles or other stuff just like using regular `git` commands:
 
-```
-biual status
-biual pull
-biual add
-biual commit
-biual push
+```bash
+$ biual status
+$ biual pull
+$ biual add
+$ biual commit
+$ biual push
 ```
 
 ## FAQ
@@ -79,7 +81,7 @@ Yes, but some distributions may not have required packages in repository, so you
 
 You have to change `interface = wlp3s0`. See `ip link` to know to what value you have to change.
 
-```
+```config
 ~/.config/polybar/config
 
 ;~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -94,7 +96,7 @@ interface = wlp3s0
 
 This is because I use redshift, which is set to my location (New Zealand).
 
-```
+```config
 ~/.config/i3/config
 
 # Set redshift to your location: http://www.geonames.org/
@@ -107,7 +109,7 @@ You can comment out this line or change it to your location. I really recommend 
 
 If you are using different language than English you probably have your XDG directories in your language instead of English. You have to change `"~/Music"` to your Music directory name:
 
-```
+```config
 ~/.config/mpd/mpd.conf
 
 music_directory    "~/Music"
