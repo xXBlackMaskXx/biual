@@ -22,15 +22,22 @@ Please move or remove them before you can switch branches.
 Aborting
 ```
 
-Remove files or just backup them with this simple method:
+You can backup these files with this simple method:
 
 ```bash
 $ mkdir -p .config/config-backup && \
-$ config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | \
+$ biual checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | \
 $ xargs -I{} mv {} .config/config-backup/{}
 ```
 
-Re-run the check out if you have still problems:
+Or remove just remove them:
+
+```bash
+$ biual checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | \
+$ xargs -I{} rm -rf {}
+```
+
+Re-run to check out if you have still problems:
 
 ```bash
 $ biual checkout
