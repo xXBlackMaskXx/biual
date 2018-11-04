@@ -7,7 +7,7 @@ My fine .dotfiles for Arch Linux.
 Open terminal and type:
 
 ```bash
-$ git clone --bare <git-repo-url> $HOME/.config/biual-git
+$ git clone --bare https://gitlab.com/dawidpotocki/biual.git $HOME/.config/biual-git
 $ alias biual='/usr/bin/git --git-dir=$HOME/.config/biual-git/ --work-tree=$HOME'
 $ biual checkout
 ```
