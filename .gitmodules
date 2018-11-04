@@ -1,0 +1,36 @@
+[submodule "goyo"]
+	path = goyo
+	url = /home/dawidpotocki/.config/nvim/bundle/goyo
+[submodule "deoplete.nvim"]
+	path = deoplete.nvim
+	url = ./.config/nvim/bundle/deoplete.nvim
+[submodule ".config/nvim/bundle/deoplete.nvim"]
+	path = .config/nvim/bundle/deoplete.nvim
+	url = https://github.com/Shougo/deoplete.nvim
+[submodule ".config/nvim/bundle/goyo"]
+	path = .config/nvim/bundle/goyo
+	url = https://github.com/junegunn/goyo.vim
+[submodule ".config/nvim/bundle/lightline.vim"]
+	path = .config/nvim/bundle/lightline.vim
+	url = https://github.com/itchyny/lightline.vim
+[submodule ".config/nvim/bundle/ranger.vim"]
+	path = .config/nvim/bundle/ranger.vim
+	url = https://github.com/rafaqz/ranger.vim
+[submodule ".config/nvim/bundle/vim-cool"]
+	path = .config/nvim/bundle/vim-cool
+	url = https://github.com/romainl/vim-cool
+[submodule ".config/nvim/bundle/vim-cpp-enhanced-highlight"]
+	path = .config/nvim/bundle/vim-cpp-enhanced-highlight
+	url = https://github.com/octol/vim-cpp-enhanced-highlight
+[submodule ".config/nvim/bundle/vim-gitbranch"]
+	path = .config/nvim/bundle/vim-gitbranch
+	url = https://github.com/itchyny/vim-gitbranch
+[submodule ".config/nvim/bundle/vim-pencil"]
+	path = .config/nvim/bundle/vim-pencil
+	url = https://github.com/reedes/vim-pencil
+[submodule ".config/nvim/bundle/vim-speeddating"]
+	path = .config/nvim/bundle/vim-speeddating
+	url = https://github.com/tpope/vim-speeddating
+[submodule ".config/zgen"]
+	path = .config/zgen
+	url = https://gitlab.com/dawidpotocki/zgen

@@ -1,0 +1,36 @@
+! Color scheme
+*.background: #070723
+*.foreground: #b4b5d3
+
+! black
+*.color0:     #070723
+*.color8:     #070723
+
+! red
+*.color1:     #c13724
+*.color9:     #c13724
+
+! green 
+*.color2:     #23b272
+*.color10:    #23b272
+
+! yellow
+*.color3:     #c6692f
+*.color11:    #c6692f
+*.color130:   #c6692f
+
+! blue
+*.color4:     #007bff
+*.color12:    #007bff
+
+! magenta
+*.color5:     #9919a0
+*.color13:    #9919a0
+
+! cyan
+*.color6:     #19a0a0
+*.color14:    #19a0a0
+
+! white
+*.color7:     #b4b5d3
+*.color15:    #b4b5d3

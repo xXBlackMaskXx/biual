@@ -1,0 +1,68 @@
+#
+#   _____                   _ _       
+#  |_   _|__ _ __ _ __ ___ (_) |_ ___ 
+#    | |/ _ \ '__| '_ ` _ \| | __/ _ \
+#    | |  __/ |  | | | | | | | ||  __/
+#    |_|\___|_|  |_| |_| |_|_|\__\___|
+#     
+
+
+[options]
+scroll_on_output = false
+scroll_on_keystroke = true
+audible_bell = false
+mouse_autohide = false
+allow_bold = true
+dynamic_title = true
+urgent_on_bell = true
+clickable_url = true
+font = Font Awesome 5 Free 11
+font = DejaVu Sans Mono for Powerline 11
+scrollback_lines = 10000
+search_wrap = true
+icon_name = utilities-terminal
+geometry = 800x550
+clickable_url = true
+cursor_blink = system
+cursor_shape = block
+browser = exo-open
+filter_unmatched_urls = true
+
+[colors]
+
+# special
+background = #070723
+foreground = #b4b5d3
+
+# black
+color0   = #070723
+color8   = #070723
+
+# red
+color1   = #c13724
+color9   = #c13724
+
+# green
+color2   = #23b272
+color10  = #23b272
+
+# yellow (f* you vim)
+color3   = #c6692f
+color11  = #c6692f
+color130 = #c6692f
+
+# blue
+color4   = #007bff
+color12  = #007bff
+
+# magenta
+color5   = #9919a0
+color13  = #9919a0
+
+# cyan
+color6   = #19a0a0 
+color14  = #19a0a0
+
+# white
+color7   = #b4b5d3
+color15	 = #b4b5d3
