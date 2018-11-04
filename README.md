@@ -62,6 +62,12 @@ AUR packages ([install manually](https://wiki.archlinux.org/index.php/Arch_User_
 $ yay -S light i3lock-fancy-git redshift-minimal ttf-dejavu-sans-mono-powerline-git polybar
 ```
 
+If you use bash or other shell type this to switch to zsh:
+
+```bash
+$ chsh -s /usr/bin/zsh
+```
+
 ### Finished
 That's it, biual dotfiles are ready! It is recommended to restart your computer. Also now you can type `biual` commands to update dotfiles or other stuff just like using regular `git` commands:
 
