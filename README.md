@@ -30,7 +30,7 @@ $ biual checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | \
 $ xargs -I{} mv {} .config/config-backup/{}
 ```
 
-Or remove just remove them:
+Or just remove them:
 
 ```bash
 $ biual checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | \
