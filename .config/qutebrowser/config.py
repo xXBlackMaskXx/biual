@@ -22,6 +22,11 @@ config.set('content.javascript.enabled', True, 'qute://*/*')
 # Custom Adblock list file
 #c.content.host_blocking.lists.append( str(config.configdir) + "/blockedHosts")
 
+# Custom CSS
+c.content.user_stylesheets = [
+    'css/main.css',
+]
+
 # Change Startpages
 config.set('url.start_pages', 'https://duckduckgo.com')
 
