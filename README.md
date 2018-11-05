@@ -58,7 +58,7 @@ $ biual config --local status.showUntrackedFiles no
 As you can see your $HOME directory have LICENSE and README.md, we can tell git to always assume that they are unchanged and remove them:
 
 ```bash
-$ biual update-index --assume-unchanged LICENSE README.MD
+$ biual update-index --assume-unchanged LICENSE README.md
 $ rm -rf LICENSE README.md
 ```
 
