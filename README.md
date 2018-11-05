@@ -55,6 +55,15 @@ Set the flag showUntrackedFiles to no for biual git repository:
 $ biual config --local status.showUntrackedFiles no
 ```
 
+As you can see your $HOME directory have LICENSE and README.md, we can tell git to always assume that they are unchanged and remove them:
+
+```bash
+$ biual update-index --assume-unchanged LICENSE README.MD
+$ rm -rf LICENSE README.md
+```
+
+You can revert this setting with `--no-assume-unchanged` flag instead.
+
 ### Dependencies
 
 Arch official repository packages:
@@ -90,7 +99,7 @@ $ biual push
 
 > What does 'biual' mean?
 
-It means "btw i use arch linux"
+It means "btw i use arch linux".
 
 > Will these configs works on other distributions than Arch Linux?
 
