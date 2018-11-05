@@ -107,7 +107,7 @@ exec_always --no-startup-id nitrogen --restore
 exec --no-startup-id mpd
 exec --no-startup-id compton -b
 # Set redshift to your location: http://www.geonames.org/
-exec --no-startup-id redshift -l -43.53:172.63 -b 1.0:0.9 -t 6500:3500
+exec --no-startup-id redshift -l -43.53:172.63 -b 1.0:0.8 -t 6500:3500
 # If you have a numpad you may want to enable this
 # exec --no-startup-id numlockx
 
