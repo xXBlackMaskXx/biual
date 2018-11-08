@@ -69,7 +69,7 @@ You can revert this setting with `--no-assume-unchanged` flag instead.
 Arch official repository packages:
 
 ```bash
-$ sudo pacman -S i3-gaps compton termite neovim ranger xclip qutebrowser zathura pamixer rofi nitrogen ttf-font-awesome ttf-dejavu zsh polkit-gnome unclutter xcape
+$ sudo pacman -S i3-gaps compton termite neovim ranger xclip qutebrowser zathura pamixer rofi nitrogen ttf-font-awesome ttf-dejavu zsh polkit-gnome unclutter xcape python-pip
 ```
 
 AUR packages ([install manually](https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_packages) or using AUR helper like [yay](https://github.com/Jguer/yay)):
@@ -77,6 +77,12 @@ AUR packages ([install manually](https://wiki.archlinux.org/index.php/Arch_User_
 ```bash
 $ yay -S light i3lock-fancy-git redshift-minimal ttf-dejavu-sans-mono-powerline-git polybar
 ```
+
+Python packages:
+
+```bash
+$ sudo pip3 install neovim
+``` 
 
 If you use bash or other shell type this to switch to zsh:
 
