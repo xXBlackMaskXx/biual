@@ -69,13 +69,13 @@ You can revert this setting with `--no-assume-unchanged` flag instead.
 Arch official repository packages:
 
 ```bash
-$ sudo pacman -S i3-gaps compton termite neovim ranger xclip qutebrowser zathura pamixer rofi nitrogen ttf-font-awesome ttf-dejavu zsh polkit-gnome unclutter xcape python-pip
+$ sudo pacman -S compton i3-gaps neovim nitrogen pamixer polkit-gnome python-pip qutebrowser ranger rofi termite ttf-dejavu ttf-font-awesome unclutter xcape xclip xorg-server xorg-xrdb zathura zsh
 ```
 
 AUR packages ([install manually](https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_packages) or using AUR helper like [yay](https://github.com/Jguer/yay)):
 
 ```bash
-$ yay -S light i3lock-fancy-git redshift-minimal ttf-dejavu-sans-mono-powerline-git polybar
+$ yay -S i3lock-fancy-git light polybar redshift-minimal ttf-dejavu-sans-mono-powerline-git
 ```
 
 Python packages:
