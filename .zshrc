@@ -42,4 +42,7 @@ alias nvi='nvim'
 alias please='sudo $(fc -ln -1)'
 alias woman='man'
 alias yt-opus='youtube-dl -x --audio-format opus'
+
+# biual aliases
 alias biual='/usr/bin/git --git-dir=$HOME/.config/biual-git/ --work-tree=$HOME'
+alias biual-pull='/usr/bin/git --git-dir=$HOME/.config/biual-git/ --work-tree=$HOME pull && /usr/bin/git --git-dir=$HOME/.config/biual-git/ --work-tree=$HOME update-index --assume-unchanged LICENSE README.md && rm -rf LICENSE README.md'
