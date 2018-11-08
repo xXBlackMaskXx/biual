@@ -101,6 +101,10 @@ $ biual commit
 $ biual push
 ```
 
+Please use `biual-pull` instead of `biual pull`. It will automatically delete README.md and LICENSE if there will be some changes and tell git again to ignore them. 
+
+NOTE: This alias is only done for ZSH at the moment.
+
 ## FAQ
 
 > What does 'biual' mean?
@@ -110,6 +114,12 @@ It means "btw i use arch linux".
 > Will these configs works on other distributions than Arch Linux?
 
 Yes, but some distributions may not have required packages in repository, so you will have to compile them manually.
+
+> How to update configs?
+
+Just type `biual-pull` in your terminal. It will pull newest configs from this GitLab project and delete README.md and LICENSE from your $HOME if they would have changes. If you want to pull also README.md and LICENSE use `biual pull`. 
+
+NOTE: This alias is only done for ZSH at the moment.
 
 > Why polybar doesn't show my wireless network?
 
