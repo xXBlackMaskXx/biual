@@ -1,4 +1,4 @@
-unclutter -idle 5 -jitter 2 -root &
+unclutter --timeout 5 --jitter 2 &
 setxkbmap -option 'caps:ctrl_modifier'  
 xcape -e 'Caps_Lock=Escape'
 
