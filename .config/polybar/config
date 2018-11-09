@@ -50,8 +50,9 @@ format-background = ${colors.background}
 
 [bar/topbar]
 
-; Use $ xrandr -q | grep " connected" | cut -d ' ' -f1
-monitor =
+monitor = ${env:MONITOR}
+monitor-fallback = HDMI1
+monitor-strict = false
 
 modules-left   = i3
 modules-center =
