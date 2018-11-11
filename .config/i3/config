@@ -100,10 +100,10 @@ bindsym $Mod+minus gaps inner all minus 5
 
 # Run everytime
 exec_always --no-startup-id xrdb -load ~/.Xresources
-exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id nitrogen --restore
 
 # Run once
+exec --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id mpd
 exec --no-startup-id compton -b
 # Set redshift to your location: http://www.geonames.org/
