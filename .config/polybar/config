@@ -156,12 +156,12 @@ label = %{A1:termite -e "htop -s PERCENT_MEM" & disown:} %percentage_used%%%{
 type = internal/date
 format = <label>
 interval = 2
-date = %a
+date = %a %d %b
 ; 24h system
 ;time = %R
 ; 12h system
 time = %I:%M%p
-label =  %date% %time%
+label = %{A1:gsimplecal & disown:}%{A3:gsimplecal & disown:} %date% %time%%{A}%{A}
 
 
 ;~~~~~~~~~~~~~~~~~
