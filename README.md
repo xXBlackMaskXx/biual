@@ -103,7 +103,7 @@ $ biual push
 
 Please use `biual-pull` instead of `biual pull`. It will automatically delete README.md and LICENSE if there will be some changes and tell git again to ignore them. 
 
-NOTE: This alias is only done for ZSH at the moment.
+NOTE: These aliases are only done for Zsh and Bash.
 
 ## FAQ
 
@@ -119,7 +119,7 @@ Yes, but some distributions may not have required packages in repository, so you
 
 Just type `biual-pull` in your terminal. It will pull newest configs from this GitLab project and delete README.md and LICENSE from your $HOME if they would have changes. If you want to pull also README.md and LICENSE use `biual pull`. 
 
-NOTE: This alias is only done for ZSH at the moment.
+NOTE: This alias is only done for Zsh and Bash.
 
 > Why polybar doesn't show my wireless network?
 
