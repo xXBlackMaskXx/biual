@@ -42,6 +42,7 @@ alias nvi='nvim'
 alias please='sudo $(fc -ln -1)'
 alias woman='man'
 alias yt-opus='youtube-dl -x --audio-format opus'
+alias yt-vorbis='youtube-dl -x --audio-format vorbis'
 
 # biual aliases
 alias biual='/usr/bin/git --git-dir=$HOME/.config/biual-git/ --work-tree=$HOME'
