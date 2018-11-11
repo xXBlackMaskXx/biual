@@ -53,9 +53,9 @@ map <C-j> :tabnext<CR>
 call deoplete#enable()
 
 " Colors
-highlight Pmenu ctermbg=0 ctermfg=4 guibg=#09091e guifg=#1da0e2
-highlight PmenuSel ctermbg=4 ctermfg=0 guibg=#1da0e2 guifg=#09091e
-highlight PmenuSbar ctermbg=0 guibg=#09091e
+highlight Pmenu ctermbg=0 ctermfg=4 guibg=#070723 guifg=#2372c6
+highlight PmenuSel ctermbg=4 ctermfg=0 guibg=#070723 guifg=#2372c6
+highlight PmenuSbar ctermbg=0 guibg=#070723
 
 " Complete with <TAB>
 inoremap <silent><expr> <TAB> pumvisible() ? "\<C-n>" :

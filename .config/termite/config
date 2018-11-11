@@ -32,37 +32,37 @@ filter_unmatched_urls = true
 
 # special
 background = #070723
-foreground = #b4b5d3
+foreground = #9b9cb5
 
 # black
 color0   = #070723
 color8   = #070723
 
 # red
-color1   = #c13724
-color9   = #c13724
+color1   = #aa2f46
+color9   = #aa2f46
 
 # green
-color2   = #23b272
-color10  = #23b272
+color2   = #2a9361
+color10  = #2a9361
 
 # yellow (f* you vim)
-color3   = #c6692f
-color11  = #c6692f
-color130 = #c6692f
+color3   = #a0782e
+color11  = #a0782e
+color130 = #a0782e
 
 # blue
-color4   = #007bff
-color12  = #007bff
+color4   = #226ebf
+color12  = #226ebf
 
 # magenta
-color5   = #9919a0
-color13  = #9919a0
+color5   = #aa2f83
+color13  = #aa2f83
 
 # cyan
-color6   = #19a0a0 
-color14  = #19a0a0
+color6   = #2a9392
+color14  = #2a9392
 
 # white
-color7   = #b4b5d3
-color15	 = #b4b5d3
+color7   = #9b9cb5
+color15	 = #9b9cb5
