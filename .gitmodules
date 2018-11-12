@@ -34,3 +34,6 @@
 [submodule ".config/zgen"]
 	path = .config/zgen
 	url = https://gitlab.com/dawidpotocki/zgen
+[submodule ".config/nvim/bundle/vim-css-color"]
+	path = .config/nvim/bundle/vim-css-color
+	url = https://github.com/ap/vim-css-color
