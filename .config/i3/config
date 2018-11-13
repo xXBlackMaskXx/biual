@@ -74,10 +74,10 @@ set $ws10 "10: "
 # ~~~~~~~~~~~~~~~
 
 # Border & Title
-for_window [class="^.*"] border pixel 3, title_format " %title "
+for_window [class="^.*"] border pixel 2, title_format " %title "
 
 # Gaps
-gaps inner 15
+gaps inner 10
 gaps outer 0
 
 new_window pixel
@@ -86,7 +86,7 @@ hide_edge_borders none
 popup_during_fullscreen smart
 
 # Changing Border style
-bindsym $Mod+u border pixel 3
+bindsym $Mod+u border pixel 2
 bindsym $Mod+Shift+u border none
 
 # Change Gaps size
