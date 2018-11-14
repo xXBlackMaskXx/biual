@@ -9,6 +9,15 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# Less pager colors
+export LESS_TERMCAP_mb=$(tput setaf 4)
+export LESS_TERMCAP_md=$(tput setaf 4)
+export LESS_TERMCAP_me=$(tput sgr0)
+export LESS_TERMCAP_se=$(tput sgr0)
+export LESS_TERMCAP_so=$(tput bold && tput setab 8 && tput setaf 1)
+export LESS_TERMCAP_ue=$(tput sgr0)
+export LESS_TERMCAP_us=$(tput setaf 2)
+
 # Sudo prompt
 export SUDO_PROMPT="$(tput setaf 4) sudo $(tput setab 4)$(tput setaf 0)$(echo "")$(tput setab 4)$(tput setaf 0) password for %p $(tput sgr0)$(tput setaf 4)$(echo "")$(tput sgr0) "
 
