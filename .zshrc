@@ -21,14 +21,14 @@ fi
 # Vim mode
 bindkey -v
 
-# Man pages colors
-export LESS_TERMCAP_mb=$'\e[1;34m'
-export LESS_TERMCAP_md=$'\e[1;34m'
-export LESS_TERMCAP_me=$'\e[0m'
-export LESS_TERMCAP_se=$'\e[0m'
-export LESS_TERMCAP_so=$'\e[1;34m'
-export LESS_TERMCAP_ue=$'\e[0m'
-export LESS_TERMCAP_us=$'\e[1;33m'
+# Less pager colors
+export LESS_TERMCAP_mb=$(tput setaf 4)
+export LESS_TERMCAP_md=$(tput setaf 4)
+export LESS_TERMCAP_me=$(tput sgr0)
+export LESS_TERMCAP_se=$(tput sgr0)
+export LESS_TERMCAP_so=$(tput bold && tput setab 8 && tput setaf 1)
+export LESS_TERMCAP_ue=$(tput sgr0)
+export LESS_TERMCAP_us=$(tput setaf 2)
 
 # Sudo prompt
 export SUDO_PROMPT="$(tput setaf 4) sudo $(tput setab 4)$(tput setaf 0)$(echo "\uE0B0")$(tput setab 4)$(tput setaf 0) password for %p $(tput sgr0)$(tput setaf 4)$(echo "\uE0B0")$(tput sgr0) "
