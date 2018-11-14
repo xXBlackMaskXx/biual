@@ -286,7 +286,7 @@ interface = wlp3s0
 label-padding = 1
 format-connected = <ramp-signal> <label-connected>
 format-packetloss = <animation-packetloss>
-label-connected = %{A1:networkmanager_dmenu& disown:}%{A3:networkmanager_dmenu& disown:}%local_ip%%%{A}%{A}
+label-connected = %{A1:networkmanager_dmenu& disown:}%{A3:networkmanager_dmenu& disown:}%local_ip%%{A}%{A}
 
 ramp-signal-0 = 
 ramp-signal-1 = 
