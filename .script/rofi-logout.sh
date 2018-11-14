@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-ANS="$(rofi -bw 4 -sep "|" -dmenu -i -p 'System' -width 20 \
--hide-scrollbar -line-padding 4 -padding 20 \
+ANS="$(rofi -sep "|" -dmenu -i -p 'System' -width 20 -line-padding 4 \
 -lines 4 <<< "Lock|Shutdown|Reboot|Exit")"
 case "$ANS" in
 	*Lock) i3lock-fancy;;

@@ -133,7 +133,7 @@ bindsym $Mod+bracketleft exec killall -9 polybar
 bindsym $Mod+bracketright exec .config/polybar/launch.sh
 
 # Launcher
-bindsym $Mod+d exec rofi -show drun -bw 3
+bindsym $Mod+d exec rofi -show drun
 
 # Applications
 bindsym $Mod+Return exec $terminal

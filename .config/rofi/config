@@ -1,4 +1,5 @@
 rofi.font: DejaVu Sans Mono 12
+rofi.bw: 2
 rofi.padding: 20
 rofi.line-padding: 2
 rofi.color-enabled: true
