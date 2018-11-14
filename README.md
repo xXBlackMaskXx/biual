@@ -75,7 +75,7 @@ $ sudo pacman -S compton gsimplecal i3-gaps neovim nitrogen pamixer polkit-gnome
 AUR packages ([install manually](https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_packages) or using AUR helper like [yay](https://github.com/Jguer/yay)):
 
 ```bash
-$ yay -S i3lock-fancy-git light polybar redshift-minimal ttf-dejavu-sans-mono-powerline-git unclutter-xfixes-git
+$ yay -S i3lock-fancy-git light networkmanager-dmenu-git polybar redshift-minimal rofi-dmenu ttf-dejavu-sans-mono-powerline-git unclutter-xfixes-git
 ```
 
 Python packages:
