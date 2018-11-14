@@ -68,7 +68,7 @@ border-top-size = 0
 border-bottom-size = 0
 radius = 0
 bottom = false
-line-size = 0
+line-size = 2
 
 font-0 = "DejaVu Sans Mono:size=10;2"
 font-1 = "DejaVu Sans Mono for Powerline:size=20;3"
@@ -102,8 +102,9 @@ label-mode-padding = 2
 
 label-focused = %index% %name%
 label-focused-padding = 2
-label-focused-background = ${colors.foreground}
-label-focused-foreground = ${colors.background}
+label-focused-background = ${colors.darkgrey}
+label-focused-foreground = ${colors.foreground}
+label-focused-underline  = ${colors.foreground}
 
 label-unfocused = %index% %name%
 label-unfocused-padding = 1
