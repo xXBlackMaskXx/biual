@@ -69,7 +69,7 @@ You can revert this setting with `--no-assume-unchanged` flag instead.
 Arch official repository packages:
 
 ```bash
-$ sudo pacman -S compton gsimplecal i3-gaps neovim nitrogen pamixer polkit-gnome python-pip qt5ct qutebrowser ranger rofi termite ttf-dejavu ttf-font-awesome xcape xclip xorg-server xorg-xrdb zathura zathura-djvu zathura-pdf-mupdf zsh
+$ sudo pacman -S compton gsimplecal i3-gaps neovim networkmanager nitrogen pamixer polkit-gnome python-pip qt5ct qutebrowser ranger rofi termite ttf-dejavu ttf-font-awesome xcape xclip xorg-server xorg-xrdb zathura zathura-djvu zathura-pdf-mupdf zsh
 ```
 
 AUR packages ([install manually](https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_packages) or using AUR helper like [yay](https://github.com/Jguer/yay)):
