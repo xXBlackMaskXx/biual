@@ -1,7 +1,7 @@
 from ranger.gui.colorscheme import ColorScheme
 from ranger.gui.color import *
 
-class Solarized(ColorScheme):
+class biual(ColorScheme):
     progress_bar_color = blue
 
     def use(self, context):
@@ -11,11 +11,10 @@ class Solarized(ColorScheme):
             return default_colors
 
         elif context.in_browser:
-            fg = 7
             if context.selected:
-                attr = reverse
+                attr |= bold | reverse
             else:
-                attr = normal
+                attr |= bold
             if context.empty or context.error:
                 bg = 1
                 fg = 0
@@ -80,8 +79,7 @@ class Solarized(ColorScheme):
         elif context.in_titlebar:
             attr |= bold
             if context.hostname:
-                fg = context.bad and 4 or 4
-                bg = context.bad and 0
+                fg = context.bad and 1 or 2
             elif context.directory:
                 fg = 4
             elif context.tab:
