@@ -9,3 +9,5 @@ rofi.color-window: #070723, #226ebf, #070723
 rofi.color-normal: #070723, #226ebf, #070723, #226ebf, #070723
 rofi.color-urgent: #070723, #226ebf, #070723, #070723, #226ebf
 rofi.color-active: #070723, #226ebf, #070723, #070723, #226ebf
+
+/* vim:ft=css
