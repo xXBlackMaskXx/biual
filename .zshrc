@@ -41,6 +41,8 @@ alias vim='nvim'
 alias nvi='nvim'
 alias please='sudo $(fc -ln -1)'
 alias woman='man'
+alias wttr='curl wttr.in'
+alias weather='curl wttr.in'
 alias yt-opus='youtube-dl -x --audio-format opus'
 alias yt-vorbis='youtube-dl -x --audio-format vorbis'
 
