@@ -9,6 +9,9 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# Vim mode
+set -o vi
+
 # Less pager colors
 export LESS_TERMCAP_mb=$(tput setaf 4)
 export LESS_TERMCAP_md=$(tput setaf 4)
