@@ -140,6 +140,8 @@ bindsym $Mod+Return exec $terminal
 bindsym $Mod+f exec $browser
 bindsym $Mod+r exec --no-startup-id move container to workspace 9: ; workspace 9: ; exec termite -e 'ncmpcpp'
 bindsym $Mod+t exec telegram-desktop
+bindsym $Mod+b exec blueberry
+bindsym $Mod+p exec keepassxc
 
 # Compton
 bindsym $Mod+c exec --no-startup-id compton -b
