@@ -33,8 +33,17 @@ alias vim='nvim'
 alias nvi='nvim'
 alias please='sudo $(fc -ln -1)'
 alias woman='man'
+alias speedtest='~/.script/speedtest-cli.py'
+
+# cURL aliases
 alias wttr='curl wttr.in'
 alias weather='curl wttr.in'
+alias surl='curl -F c=@- https://ptpb.pw/u <<<'
+alias shorturl='curl -F c=@- https://ptpb.pw/u <<<'
+alias pastebin-txt='curl -F c=@- https://ptpb.pw/ <<<'
+alias pastebin-file='curl -F c=@- -F p=1 https://ptpb.pw/ <'
+
+# youtube-dl aliases
 alias yt-opus='youtube-dl -x --audio-format opus'
 alias yt-vorbis='youtube-dl -x --audio-format vorbis'
 
