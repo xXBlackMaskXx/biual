@@ -16,7 +16,6 @@ allow_bold = true
 dynamic_title = true
 urgent_on_bell = true
 clickable_url = true
-font = Font Awesome 5 Free 11
 font = DejaVu Sans Mono for Powerline 11
 scrollback_lines = 10000
 search_wrap = true
