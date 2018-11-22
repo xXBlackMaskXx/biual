@@ -105,7 +105,6 @@ exec_always --no-startup-id nitrogen --restore
 # Run once
 exec --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id mpd
-exec --no-startup-id dunst
 exec --no-startup-id compton -b
 # Set redshift to your location: http://www.geonames.org/
 exec --no-startup-id redshift -l -43.53:172.63 -b 1.0:0.9 -t 6500:4000
