@@ -33,4 +33,4 @@
 	url = https://github.com/tpope/vim-speeddating
 [submodule ".config/zgen"]
 	path = .config/zgen
-	url = https://gitlab.com/dawidpotocki/zgen
+	url = https://gitlab.com/dawidpotocki/zgen.git
