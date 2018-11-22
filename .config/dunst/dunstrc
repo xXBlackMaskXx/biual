@@ -1,10 +1,10 @@
 [global]
     ### Display ###
 
-    # Which monitor should the notifications be displayed on.
+    # Which monitor should the notifications be displayed on
     monitor = 0
 
-    # Display notification on focused monitor.  Possible modes are:
+    # Display notification on focused monitor. Possible modes are:
     #   mouse: follow mouse pointer
     #   keyboard: follow window with keyboard focus
     #   none: don't follow anything
@@ -31,10 +31,10 @@
     # screen width minus the width defined in within the geometry option.
     geometry = "450x5-10+27"
 
-    # Show how many messages are currently hidden (because of geometry).
+    # Show how many messages are currently hidden (because of geometry)
     indicate_hidden = yes
 
-    # Shrink window if it's smaller than the width.  Will be ignored if
+    # Shrink window if it's smaller than the width. Will be ignored if
     # width is 0.
     shrink = no
 
@@ -53,10 +53,10 @@
     # Set to 0 to disable.
     separator_height = 0
 
-    # Padding between text and separator.
+    # Padding between text and separator
     padding = 6
 
-    # Horizontal padding.
+    # Horizontal padding
     horizontal_padding = 6
 
     # Defines width in pixels of frame around the notification window.
@@ -71,7 +71,7 @@
     #  * anything else will be interpreted as a X color.
     separator_color = frame
 
-    # Sort messages by urgency.
+    # Sort messages by urgency
     sort = yes
 
     # Don't remove messages, if the user is idle (no mouse or keyboard input)
@@ -141,7 +141,7 @@
     # Possible values are "start", "middle" and "end".
     ellipsize = middle
 
-    # Ignore newlines '\n' in notifications.
+    # Ignore newlines '\n' in notifications
     ignore_newline = no
 
     # Merge multiple notifications with the same content
@@ -150,7 +150,7 @@
     # Hide the count of merged notifications with the same content
     hide_duplicate_count = false
 
-    # Display indicators for URLs (U) and actions (A).
+    # Display indicators for URLs (U) and actions (A)
     show_indicators = yes
 
     ### Icons ###
@@ -161,13 +161,13 @@
     # Scale larger icons down to this size, set to 0 to disable
     max_icon_size = 32
 
-    # Paths to default icons.
+    # Paths to default icons
     icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
 
     ### History ###
 
     # Should a notification popped up from history be sticky or timeout
-    # as if it would normally do.
+    # as if it would normally do
     sticky_history = yes
 
     # Maximum amount of notifications kept in history
@@ -175,7 +175,10 @@
 
     ### Misc/Advanced ###
 
-    # Browser for opening urls in context menu.
+    # dmenu or rofi path
+    dmenu = /usr/bin/rofi -dmenu -p dunst:
+
+    # Browser for opening urls in context menu
     browser = /usr/bin/qutebrowser
 
     # Always run rule-defined scripts, even if the notification is suppressed
@@ -191,16 +194,16 @@
 
     # Shortcuts are specified as [modifier+][modifier+]...key
     # Available modifiers are "ctrl", "mod1" (the alt-key), "mod2",
-    # "mod3" and "mod4" (windows-key).
-    # Xev might be helpful to find names for keys.
+    # "mod3" and "mod4" (windows-key)
+    # Xev might be helpful to find names for keys
 
-    # Close notification.
+    # Close notification
     close = ctrl+space
 
     # Close all notifications.
     close_all = ctrl+shift+space
 
-    # Redisplay last message(s).
+    # Redisplay last message(s)
     history = ctrl+grave
 
 	# Context menu.
