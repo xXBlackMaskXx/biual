@@ -6,15 +6,19 @@
 #      
 
 
-# Zgen, need to zgen reset after changing
+# Zgen, need to 'zgen reset' after changing
 source "${HOME}/.config/zgen/zgen.zsh"
 if ! zgen saved; then
-# Plugins
-zgen oh-my-zsh 
-zgen oh-my-zsh plugins/git
-zgen oh-my-zsh plugins/command-not-found
-zgen oh-my-zsh plugins/vi-mode
-zgen load dawidpotocki/agnoster-biual-zsh-theme agnoster-biual.zsh-theme
+
+	# Plugins
+	zgen oh-my-zsh 
+	zgen oh-my-zsh plugins/git
+	zgen oh-my-zsh plugins/command-not-found
+	zgen oh-my-zsh plugins/vi-mode
+	
+	# Theme
+	zgen load dawidpotocki/agnoster-zsh-theme agnoster.zsh-theme
+
 zgen save
 fi
 
