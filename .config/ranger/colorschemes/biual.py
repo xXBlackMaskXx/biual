@@ -52,8 +52,7 @@ class biual(ColorScheme):
                 bg = 0
                 attr |= bold
             if context.link:
-                fg = context.good and 4 or 4
-                bg = context.bad and 4
+                fg = 4 if context.good else 1
                 attr |= bold
             if context.tag_marker and not context.selected:
                 attr |= bold
