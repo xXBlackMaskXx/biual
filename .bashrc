@@ -1,8 +1,8 @@
-#  _               _     
-# | |__   __ _ ___| |__  
-# | '_ \ / _` / __| '_ \ 
-# | |_) | (_| \__ \ | | |
-# |_.__/ \__,_|___/_| |_|
+#   _               _     
+#  | |__   __ _ ___| |__  
+#  | '_ \ / _` / __| '_ \ 
+#  | |_) | (_| \__ \ | | |
+#  |_.__/ \__,_|___/_| |_|
 #
 
 
@@ -17,7 +17,7 @@ export LESS_TERMCAP_mb=$(tput setaf 4)
 export LESS_TERMCAP_md=$(tput setaf 4)
 export LESS_TERMCAP_me=$(tput sgr0)
 export LESS_TERMCAP_se=$(tput sgr0)
-export LESS_TERMCAP_so=$(tput bold && tput setab 8 && tput setaf 1)
+export LESS_TERMCAP_so=$(tput setab 4 && tput setaf 0)
 export LESS_TERMCAP_ue=$(tput sgr0)
 export LESS_TERMCAP_us=$(tput setaf 2)
 
