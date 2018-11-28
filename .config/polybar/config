@@ -281,12 +281,13 @@ label-mounted-foreground = ${colors.moderate}
 ;~~~~~~~~~~~~~~~~~~~~~~~~~~
 [module/wireless-network]
 type = internal/network
-interface = wlp3s0
+interface = ${env:WIRELESS}
 
 label-padding = 1
 format-connected = <ramp-signal> <label-connected>
 format-packetloss = <animation-packetloss>
 label-connected = %{A1:networkmanager_dmenu& disown:}%{A3:networkmanager_dmenu& disown:}%local_ip%%{A}%{A}
+label-disconnected = %{A1:networkmanager_dmenu& disown:}%{A3:networkmanager_dmenu& disown:} disconnected%{A}%{A}
 
 ramp-signal-0 = 
 ramp-signal-1 = 
