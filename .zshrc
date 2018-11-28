@@ -34,6 +34,10 @@ export LESS_TERMCAP_so=$(tput setab 4 && tput setaf 0)
 export LESS_TERMCAP_ue=$(tput sgr0)
 export LESS_TERMCAP_us=$(tput setaf 2)
 
+# Ruby
+PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin"
+export GEM_HOME=$HOME/.gem
+
 # Sudo prompt
 export SUDO_PROMPT="$(tput setaf 1) sudo $(tput setab 1)$(tput setaf 0)$(echo "\uE0B0")$(tput setab 1)$(tput setaf 0) password for %p $(tput sgr0)$(tput setaf 1)$(echo "\uE0B0")$(tput sgr0) "
 
