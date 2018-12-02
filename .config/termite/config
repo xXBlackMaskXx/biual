@@ -24,7 +24,6 @@ geometry = 800x550
 clickable_url = true
 cursor_blink = system
 cursor_shape = block
-browser = exo-open
 filter_unmatched_urls = true
 
 [colors]
