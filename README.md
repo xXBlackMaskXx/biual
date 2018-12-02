@@ -69,13 +69,13 @@ You can revert this setting with `--no-assume-unchanged` flag instead.
 Arch official repository packages:
 
 ```bash
-$ sudo pacman -S blueberry compton dunst gsimplecal i3-gaps mpd ncmpcpp neovim networkmanager nitrogen pamixer papirus-icon-theme pavucontrol pdfjs polkit-gnome pulseaudio pulseaudio-alsa pulseaudio-bluetooth python-pip qt5ct qutebrowser ranger rofi termite ttf-dejavu ttf-font-awesome xcape xclip xorg-server xorg-xrandr xorg-xrdb zathura zathura-djvu zathura-pdf-mupdf zsh
+$ sudo pacman -S blueberry compton dunst gsimplecal i3-gaps light mpd ncmpcpp neovim networkmanager nitrogen pamixer papirus-icon-theme pavucontrol pdfjs polkit-gnome pulseaudio pulseaudio-alsa pulseaudio-bluetooth python-pip qt5ct qutebrowser ranger rofi termite ttf-dejavu ttf-font-awesome xcape xclip xorg-server xorg-xrandr xorg-xrdb zathura zathura-djvu zathura-pdf-mupdf zsh
 ```
 
 AUR packages ([install manually](https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_packages) or using AUR helper like [yay](https://github.com/Jguer/yay)):
 
 ```bash
-$ yay -S i3lock-fancy-git light networkmanager-dmenu-git polybar redshift-minimal rofi-dmenu ttf-dejavu-sans-mono-powerline-git unclutter-xfixes-git
+$ yay -S i3lock-fancy-git networkmanager-dmenu-git polybar redshift-minimal rofi-dmenu ttf-dejavu-sans-mono-powerline-git unclutter-xfixes-git
 ```
 
 Python packages:
