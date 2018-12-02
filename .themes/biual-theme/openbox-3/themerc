@@ -29,8 +29,8 @@ padding.height: 4
 
 window.active.border.color: #2d3036
 window.inactive.border.color: #2d3036
-window.active.title.separator.color: #070723
-window.inactive.title.separator.color: #070723
+window.active.title.separator.color: #0a0a30
+window.inactive.title.separator.color: #0a0a30
 window.active.client.color: #2d3036
 window.inactive.client.color: #2d3036
 
@@ -53,15 +53,15 @@ window.inactive.button.toggled.pressed.image.color: #226ebf
 window.inactive.button.toggled.hover.image.color: #9b9cb5
 
 window.active.title.bg: flat solid
-window.active.title.bg.color: #070723
+window.active.title.bg.color: #0a0a30
 window.active.label.bg: flat solid
-window.active.label.bg.color: #070723
+window.active.label.bg.color: #0a0a30
 #window.active.handle.bg: texture
 #window.active.grip.bg: texture
 window.inactive.title.bg: flat solid
-window.inactive.title.bg.color: #070723
+window.inactive.title.bg.color: #0a0a30
 window.inactive.label.bg: flat solid
-window.inactive.label.bg.color: #070723
+window.inactive.label.bg.color: #0a0a30
 #window.inactive.handle.bg: texture
 #window.inactive.grip.bg: texture
 
@@ -100,11 +100,11 @@ menu.separator.color: #a8adb5
 menu.title.text.color: #9b9cb5
 menu.items.text.color: #2d3036
 menu.items.disabled.text.color: #76797F
-menu.items.active.text.color: #070723
+menu.items.active.text.color: #0a0a30
 menu.items.active.disabled.text.color: #aeb0b6
 
 menu.items.bg: flat solid
-menu.items.bg.color: #070723
+menu.items.bg.color: #0a0a30
 menu.items.active.bg: flat solid
 menu.items.active.bg.color: #226ebf
 menu.title.bg: flat solid
@@ -123,9 +123,9 @@ osd.border.color: #2d3036
 osd.label.text.color: #9b9cb5
 
 osd.bg: flat solid
-osd.bg.color: #070723
+osd.bg.color: #0a0a30
 osd.label.bg: flat solid
-osd.label.bg.color: #070723
+osd.label.bg.color: #0a0a30
 osd.hilight.bg: flat solid
 osd.hilight.bg.color: #226ebf
 osd.unhilight.bg: flat solid

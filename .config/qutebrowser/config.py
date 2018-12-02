@@ -52,17 +52,18 @@ c.fonts.hints = 'bold 10pt DejaVu Sans Mono'
 c.fonts.debug_console = '10pt DejaVu Sans Mono'
 
 # Color Scheme
-black =      "#070723"
-white =      "#b4b5d3" 
-red =        "#aa2f46"
-green =      "#2a9361"
-yellow =     "#a0782e"
-blue =       "#226ebf"
-magenta =    "#aa2f83"
-cyan =       "#2a9392"
+black =         "#0a0a30"
+white =         "#b4b5d3" 
+red =           "#aa2f46"
+green =         "#2a9361"
+yellow =        "#a0782e"
+blue =          "#226ebf"
+magenta =       "#aa2f83"
+cyan =          "#2a9392"
 
-background = "#070723"
-accent =     "#226ebf"
+background =    "#0a0a30"
+backgroundAlt = "#10105b"
+accent =        "#226ebf"
 
 
 # Set colors from color scheme
@@ -136,8 +137,8 @@ c.colors.tabs.indicator.start = accent
 c.colors.tabs.indicator.stop = background
 c.colors.tabs.odd.bg = background
 c.colors.tabs.odd.fg = accent
-c.colors.tabs.selected.even.bg = accent
-c.colors.tabs.selected.even.fg = background
-c.colors.tabs.selected.odd.bg = accent
-c.colors.tabs.selected.odd.fg = background
+c.colors.tabs.selected.even.bg = backgroundAlt
+c.colors.tabs.selected.even.fg = accent
+c.colors.tabs.selected.odd.bg = backgroundAlt
+c.colors.tabs.selected.odd.fg = accent
 #c.colors.webpage.bg = background

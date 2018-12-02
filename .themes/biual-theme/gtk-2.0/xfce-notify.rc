@@ -1,4 +1,4 @@
-gtk-color-scheme = "selected_bg_color:#226ebf\nselected_fg_color:#070723"
+gtk-color-scheme = "selected_bg_color:#226ebf\nselected_fg_color:#0a0a30"
 
 style "notify-window" {
   XfceNotifyWindow::summary-bold = 1

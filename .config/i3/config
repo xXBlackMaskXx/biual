@@ -35,9 +35,9 @@ set $transp				#00000000
 
 
 # class                 bd		bg      	txt     	ind     	child_bd
-client.focused          $blue		$blue 	$bg		$blue 	$blue
+client.focused          $black_l	$black_l 	$blue		$blue 	$blue
 client.unfocused        $bg		$bg		$blue		$bg		$bg
-client.focused_inactive $bg		$blue		$bg		$bg		$bg
+client.focused_inactive $black_l	$black_l	$blue		$bg		$bg
 client.urgent           $bg		$bg		$blue   	$bg		$bg
 client.placeholder      $grey		$fg		$bg     	$grey		$bg
 client.background       $bg
