@@ -28,7 +28,7 @@ c.content.user_stylesheets = [
 ]
 
 # Change Startpages
-config.set('url.start_pages', 'https://duckduckgo.com')
+config.set('url.start_pages', 'https://start.duckduckgo.com')
 
 # Tab settings
 config.set('tabs.padding', {"top": 1, "bottom": 2, "left": 5, "right": 5})
