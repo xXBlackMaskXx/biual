@@ -224,8 +224,8 @@ bindsym $Moe+$up    focus up
 bindsym $Moe+$right focus right
 
 # Focus to parent/child
-bindsym Mod1+p focus parent
-bindsym Mod1+c focus child
+bindsym $Moe+p focus parent
+bindsym $Moe+c focus child
 
 # Move focused window
 bindsym $Mod+Shift+$left  move left  20px
