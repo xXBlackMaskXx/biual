@@ -2,10 +2,10 @@
 
 My fine .dotfiles for Arch Linux.
 
-## [Installation guide (English)](../../wikis/English/Installation-guide)
+## [Installation guide (English)](../../../wikis/English/Installation-guide)
 To get started, checkout installation guide!
 
-## [Instrukcja instalacji (Polski)](../../wikis/Polski/Instrukcja-instalacji)
+## [Instrukcja instalacji (Polski)](../../../wikis/Polski/Instrukcja-instalacji)
 Żeby zaczać, sprawdź instrukcje instalacji!
 
 ## Screenshots [05-12-2018]
