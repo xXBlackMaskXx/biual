@@ -194,6 +194,9 @@ bindsym $Mod+0 workspace $ws10
 bindsym $Mod+$down workspace next
 bindsym $Mod+$up workspace prev
 
+# Back and forth
+bindsym $Mod+Tab workspace back_and_forth
+
 # Move focused container to Workspace
 bindsym $Mod+Shift+1 move container to workspace $ws1; workspace $ws1
 bindsym $Mod+Shift+2 move container to workspace $ws2; workspace $ws2
