@@ -152,7 +152,7 @@ bindsym $Mod+Shift+c exec --no-startup-id killall -9 compton
 bindsym $Mod+x exec --no-startup-id ~/.script/rofi-logout.sh
 
 # Screenshot
-bindsym Print exec --no-startup-id ~/.script/screenshot.sh
+bindsym Print exec --no-startup-id mkdir "$(xdg-user-dir PICTURES)"/Screenshot & maim "$(xdg-user-dir PICTURES)"/Screenshot/"$(date +%G-%m-%d_%s.png)"
 
 # Audio - Vim bindings
 bindsym $Mod+$Moe+$up exec --no-startup-id pamixer -i 1
