@@ -106,7 +106,7 @@ exec_always --no-startup-id nitrogen --restore
 exec --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id mpd
 exec --no-startup-id dunst
-exec --no-startup-id compton -b
+exec --no-startup-id compton
 # Set redshift to your location: http://www.geonames.org/
 exec --no-startup-id redshift -l -43.53:172.63 -b 1.0:0.9 -t 6500:4000
 # If you have a numpad you may want to enable this
@@ -145,7 +145,7 @@ bindsym $Mod+b exec blueberry
 bindsym $Mod+p exec keepassxc
 
 # Compton
-bindsym $Mod+c exec --no-startup-id compton -b
+bindsym $Mod+c exec --no-startup-id compton
 bindsym $Mod+Shift+c exec --no-startup-id killall -9 compton
 
 # Logout 
