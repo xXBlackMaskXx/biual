@@ -1,4 +1,4 @@
-#
+e
 #   _ _____                             
 #  (_)___ /        __ _  __ _ _ __  ___ 
 #  | | |_ \ _____ / _` |/ _` | '_ \/ __|
@@ -107,8 +107,7 @@ exec --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id mpd
 exec --no-startup-id dunst
 exec --no-startup-id compton
-# Set redshift to your location: http://www.geonames.org/
-exec --no-startup-id redshift -l -43.53:172.63 -b 1.0:0.9 -t 6500:4000
+exec --no-startup-id redshift -b 1.0:0.85 -t 6500:4000
 # If you have a numpad you may want to enable this
 # exec --no-startup-id numlockx
 
