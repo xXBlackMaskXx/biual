@@ -210,7 +210,7 @@
     context = ctrl+shift+period
 
 [urgency_low]
-    background  = "#040430"
+    background  = "#0a0a30"
     foreground  = "#226ebf"
     frame_color = "#226ebf"
     timeout = 5
@@ -218,7 +218,7 @@
     #icon = /path/to/icon
 
 [urgency_normal]
-    background  = "#040430"
+    background  = "#0a0a30"
     foreground  = "#226ebf"
     frame_color = "#226ebf"
     timeout = 5
@@ -226,7 +226,7 @@
     #icon = /path/to/icon
 
 [urgency_critical]
-    background  = "#040430"
+    background  = "#0a0a30"
     foreground  = "#aa2f46"
     frame_color = "#aa2f46"
     timeout = 0
