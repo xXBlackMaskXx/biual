@@ -8,10 +8,6 @@
 #
 
 
-# Set your apps
-set $browser qutebrowser
-set $terminal termite
-
 # Xresources      var		value
 set_from_resource $bg		background
 set_from_resource $fg		foreground
@@ -138,8 +134,8 @@ bindsym $Mod+bracketright exec .config/polybar/launch.sh
 bindsym $Mod+d exec rofi -show drun
 
 # Applications
-bindsym $Mod+Return exec $terminal
-bindsym $Mod+f exec $browser
+bindsym $Mod+Return exec $TERMINAL
+bindsym $Mod+f exec $BROWSER
 bindsym $Mod+r exec --no-startup-id move container to workspace 9: ; workspace 9: ; exec termite -e 'ncmpcpp'
 bindsym $Mod+t exec telegram-desktop
 bindsym $Mod+b exec blueberry
