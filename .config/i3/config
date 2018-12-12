@@ -108,14 +108,16 @@ exec --no-startup-id mpd
 exec --no-startup-id dunst
 exec --no-startup-id compton
 exec --no-startup-id redshift -b 1.0:0.85 -t 6500:4000
-# If you have a numpad you may want to enable this
+# If you have a numpad you may want to enable this and install numlockx
 # exec --no-startup-id numlockx
 
 # Polkit, required for authentication
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-
 # Keyring for storing saved passwords
 exec --no-startup-id gnome-keyring-daemon --start --components=pkcs11
+
+# Scratchpad
+exec --no-startup-id keepassxc -name keepassxc-sp
 
 
 # ~~~~~~~~~~~~~~
@@ -141,7 +143,7 @@ bindsym $Mod+f exec $browser
 bindsym $Mod+r exec --no-startup-id move container to workspace 9: ; workspace 9: ; exec termite -e 'ncmpcpp'
 bindsym $Mod+t exec telegram-desktop
 bindsym $Mod+b exec blueberry
-bindsym $Mod+p exec keepassxc
+bindsym $Mod+p [instance="keepassxc-sp"] scratchpad show; [instance="keepassxc-sp"] move position center
 
 # Compton
 bindsym $Mod+c exec --no-startup-id compton
@@ -285,6 +287,11 @@ assign [class="Rhythmbox"] workspace $ws9
 # Video (WS10)
 assign [class="obs"] workspace $ws10
 assign [class="vlc"] workspace $ws10
+
+# Scratchpad
+for_window [instance="keepassxc-sp"] move scratchpad
+for_window [instance="keepassxc-sp"] border pixel 3
+for_window [instance="keepassxc-sp"] resize set 800 600
 
 # vim: filetype=i3
 # vim: set ts=6:sw=6
