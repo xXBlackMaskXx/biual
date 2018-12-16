@@ -7,10 +7,6 @@ killall -q polybar
 while pgrep -x polybar >/dev/null; do sleep 1; done
 
 # Launch polybar
-if type "xrandr" > /dev/null; then
-	for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-	WIRELESS=$(ls /sys/class/net/ | grep ^wl | awk 'NR==1{print $1}') MONITOR=$m polybar --reload topbar -c ~/.config/polybar/config &	
+for m in $(polybar --list-monitors | cut -d":" -f1); do
+	WIRELESS=$(ls /sys/class/net/ | grep ^wl | awk 'NR==1{print $1}') MONITOR=$m polybar --reload topbar &
 done
-else
-	polybar --reload topbar -c ~/.config/polybar/config &
-fi

@@ -91,7 +91,7 @@ cursor-click = pointer
 ;~~~~~~~~~~~~~~~
 [module/i3]
 type = internal/i3
-pin-workspaces = false
+pin-workspaces = true
 strip-wsnumbers = true
 index-sort = true
 enable-click = true
