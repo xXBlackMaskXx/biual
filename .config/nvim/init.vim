@@ -1,4 +1,3 @@
-"
 "                         _           
 "   _ __   ___  _____   _(_)_ __ ___  
 "  | '_ \ / _ \/ _ \ \ / / | '_ ` _ \ 
@@ -9,6 +8,7 @@
 
 " Load Pathogen for plugins
 execute pathogen#infect()
+
 " Basic stuff
 syntax on
 filetype plugin indent on
@@ -19,6 +19,15 @@ set clipboard=unnamedplus
 set tabstop=4
 set shiftwidth=4
 
+" Basic colorscheme
+hi LineNr 			ctermfg=3
+hi CursorLineNr 	ctermfg=11
+hi Visual 						ctermbg=8
+hi Search 						ctermbg=8
+hi SpellBad 		ctermfg=0 	ctermbg=1 	cterm=underline
+hi SpellCap 		ctermfg=0 	ctermbg=2 	cterm=underline
+hi SpellRare 		ctermfg=0 	ctermbg=3 	cterm=underline
+hi SpellLocal 		ctermfg=0 	ctermbg=5 	cterm=underline
 
 " Lightline
 set noshowmode
