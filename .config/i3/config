@@ -136,7 +136,7 @@ bindsym $Mod+d exec rofi -show drun
 # Applications
 bindsym $Mod+Return exec $TERMINAL
 bindsym $Mod+f exec $BROWSER
-bindsym $Mod+r exec --no-startup-id move container to workspace 9: ; workspace 9: ; exec termite -e 'ncmpcpp'
+bindsym $Mod+r exec --no-startup-id move container to workspace 9: ; workspace 9: ; exec $TERMINAL -e 'ncmpcpp'
 bindsym $Mod+t exec telegram-desktop
 bindsym $Mod+b exec blueberry
 bindsym $Mod+p [instance="keepassxc-sp"] scratchpad show; [instance="keepassxc-sp"] move position center
