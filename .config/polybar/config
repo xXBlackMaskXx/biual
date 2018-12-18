@@ -70,10 +70,10 @@ radius = 0
 bottom = false
 line-size = 2
 
-font-0 = "DejaVu Sans Mono:size=10;2"
-font-1 = "DejaVu Sans Mono for Powerline:size=20;3"
-font-2 = "Font Awesome 5 Brands:pixelsize=13;2"
-font-3 = "Font Awesome 5 Free:style=Solid:pixelsize=12;2"
+font-0 = "DejaVu Sans Mono:pixelsize=10:antialias=true;2"
+font-1 = "DejaVu Sans Mono for Powerline:pixelsize=20:antialias=true;3"
+font-2 = "Font Awesome 5 Brands:pixelsize=13:antialias=true;2"
+font-3 = "Font Awesome 5 Free:style=Solid:pixelsize=12:antialias=true;2"
 
 background = ${colors.background}
 foreground = ${colors.foreground}
