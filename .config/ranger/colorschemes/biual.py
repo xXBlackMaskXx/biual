@@ -13,8 +13,6 @@ class biual(ColorScheme):
         elif context.in_browser:
             if context.selected:
                 attr |= bold | reverse
-            else:
-                attr |= bold
             if context.empty or context.error:
                 bg = 1
                 fg = 0
@@ -24,36 +22,28 @@ class biual(ColorScheme):
             if context.media:
                 if context.image:
                     fg = 2
-                    attr |= bold
                 else:
                     fg = 1
-                    attr |= bold
             if context.container:
                 fg = 4
                 attr |= bold
             if context.directory:
                 fg = 4
-                attr |= bold
             elif context.executable and not \
                     any((context.media, context.container,
                         context.fifo, context.socket)):
                 fg = 3
-                attr |= bold
             if context.socket:
                 fg = 5
                 bg = 0
-                attr |= bold
             if context.fifo:
                 fg = 5
                 bg = 0
-                attr |= bold
             if context.device:
                 fg = 2
                 bg = 0
-                attr |= bold
             if context.link:
                 fg = 4 if context.good else 1
-                attr |= bold
             if context.tag_marker and not context.selected:
                 attr |= bold
                 if fg in (red, magenta):
