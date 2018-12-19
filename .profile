@@ -5,5 +5,5 @@ xcape -e 'Caps_Lock=Escape'
 export QT_QPA_PLATFORMTHEME=gtk2
 export XDG_CONFIG_HOME="$HOME/.config"
 export BROWSER="qutebrowser"
-export TERMINAL="termite"
+export TERMINAL="st"
 export EDITOR="nvim"
