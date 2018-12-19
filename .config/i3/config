@@ -131,7 +131,7 @@ bindsym $Mod+bracketleft exec killall -9 polybar
 bindsym $Mod+bracketright exec .config/polybar/launch.sh
 
 # Launcher
-bindsym $Mod+d exec rofi -show drun
+bindsym $Mod+d exec i3-dmenu-desktop --dmenu="dmenu -f -i"
 
 # Applications
 bindsym $Mod+Return exec $TERMINAL
@@ -146,7 +146,7 @@ bindsym $Mod+c exec --no-startup-id compton
 bindsym $Mod+Shift+c exec --no-startup-id killall -9 compton
 
 # Logout 
-bindsym $Mod+x exec --no-startup-id ~/.script/rofi-logout.sh
+bindsym $Mod+x exec --no-startup-id ~/.script/dmenu-logout.sh
 
 # Screenshot
 bindsym Print exec --no-startup-id mkdir "$(xdg-user-dir PICTURES)"/Screenshot & maim "$(xdg-user-dir PICTURES)"/Screenshot/"$(date +%G-%m-%d_%s.png)"
