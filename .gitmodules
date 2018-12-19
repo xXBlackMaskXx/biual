@@ -37,3 +37,6 @@
 [submodule ".config/dmenu"]
 	path = .config/dmenu
 	url = https://gitlab.com/dawidpotocki/dmenu
+[submodule ".config/st"]
+	path = .config/st
+	url = https://gitlab.com/dawidpotocki/st
