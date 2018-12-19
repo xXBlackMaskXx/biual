@@ -33,3 +33,5 @@
 ! white
 *.color7:     #9b9cb5
 *.color15:    #9b9cb5
+
+*.font:	DejaVu Sans Mono for Powerline:pixelsize=15:antialias=true:autohint=true:hintstyle=hintmedium
