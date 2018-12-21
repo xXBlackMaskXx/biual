@@ -7,7 +7,7 @@ TIME="$(printf "0.5\n5\n10\n15" | dmenu -i -p 'How many seconds you want to wait
 
 # Set flag if selected "Window"
 case "$TYPE" in
-	Window) TYPE="-s";;
+	Window) TYPE="-s -u";;
 	*)      TYPE=""
 esac
 
