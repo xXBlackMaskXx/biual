@@ -24,7 +24,7 @@ zgen save
 fi
 
 # Load shell-agnostic configs
-source .shellrc
+source ~/.shellrc
 
 # Vim mode
 bindkey -v
