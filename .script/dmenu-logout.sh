@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-ANS="$(echo -e "Lock\nShutdown\nReboot\nExit" | dmenu -i -p 'System')"
+ANS="$(printf "Lock\nShutdown\nReboot\nExit" | dmenu -i -p 'System')"
 case "$ANS" in
 	Lock) i3lock-fancy;;
 	Shutdown) systemctl -i poweroff;;
