@@ -39,7 +39,7 @@ alias yt-opus='youtube-dl -x --audio-format opus'
 alias yt-vorbis='youtube-dl -x --audio-format vorbis'
 
 # biual aliases
-alias biual='/usr/bin/git --git-dir=$HOME/.config/biual-git/ --work-tree=$HOME'
-alias biual-pull='/usr/bin/git --git-dir=$HOME/.config/biual-git/ --work-tree=$HOME pull && /usr/bin/git --git-dir=$HOME/.config/biual-git/ --work-tree=$HOME update-index --assume-unchanged ~/LICENSE ~/README.md && rm -rf ~/LICENSE ~/README.md'
+alias biual='git --git-dir=$HOME/.config/biual-git/ --work-tree=$HOME'
+alias biual-pull='git --git-dir=$HOME/.config/biual-git/ --work-tree=$HOME pull && git --git-dir=$HOME/.config/biual-git/ --work-tree=$HOME update-index --assume-unchanged ~/LICENSE ~/README.md && rm -rf ~/LICENSE ~/README.md && git --git-dir=$HOME/.config/biual-git/ --work-tree=$HOME submodule update --recursive'
 
 # vim: filetype=zsh
