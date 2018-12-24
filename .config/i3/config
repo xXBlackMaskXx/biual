@@ -127,11 +127,11 @@ bindsym $Mod+Shift+r restart
 bindsym $Mod+Shift+q kill
 
 # Hide polybar
-bindsym $Mod+bracketleft exec killall -9 polybar
-bindsym $Mod+bracketright exec .config/polybar/launch.sh
+bindsym $Mod+bracketleft exec --no-startup-id killall -9 polybar
+bindsym $Mod+bracketright exec --no-startup-id .config/polybar/launch.sh
 
 # Launcher
-bindsym $Mod+d exec i3-dmenu-desktop --dmenu="dmenu -f -i"
+bindsym $Mod+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -f -i"
 
 # Applications
 bindsym $Mod+Return exec $TERMINAL
