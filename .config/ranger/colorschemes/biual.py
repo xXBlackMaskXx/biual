@@ -23,10 +23,9 @@ class biual(ColorScheme):
                 if context.image:
                     fg = 2
                 else:
-                    fg = 1
+                    fg = 5
             if context.container:
-                fg = 4
-                attr |= bold
+                fg = 6
             if context.directory:
                 fg = 4
             elif context.executable and not \
