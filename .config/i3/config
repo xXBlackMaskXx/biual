@@ -82,8 +82,8 @@ hide_edge_borders none
 popup_during_fullscreen smart
 
 # Changing Border style
-bindsym $Mod+u border pixel 2
-bindsym $Mod+Shift+u border none
+bindsym $Mod+o border pixel 2
+bindsym $Mod+Shift+o border none
 
 # Change Gaps size
 bindsym $Mod+equal gaps inner all plus  5
@@ -140,6 +140,7 @@ bindsym $Mod+r exec --no-startup-id move container to workspace 9: ; workspac
 bindsym $Mod+t exec telegram-desktop
 bindsym $Mod+b exec blueberry
 bindsym $Mod+p [instance="keepassxc-sp"] scratchpad show; [instance="keepassxc-sp"] move position center
+bindsym $Mod+u exec --no-startup-id exec ~/.script/dmenu-unicode.sh
 
 # Compton
 bindsym $Mod+c exec --no-startup-id compton
