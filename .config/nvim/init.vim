@@ -57,8 +57,8 @@ autocmd OptionSet guicursor noautocmd set guicursor=
 " Tab Managment
 map <C-o> :tabnew<CR>
 map <C-d> :tabclose<CR>
-map <C-k> :tabprev<CR>
-map <C-j> :tabnext<CR>
+map <C-h> :tabprev<CR>
+map <C-l> :tabnext<CR>
 
 " Deoplete, autocompletion
 call deoplete#enable()
