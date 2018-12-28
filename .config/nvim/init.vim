@@ -19,6 +19,8 @@ set nu relativenumber
 set clipboard=unnamedplus 
 set tabstop=4
 set shiftwidth=4
+set ignorecase
+set smartcase
 
 " Colorscheme
 hi LineNr 			ctermfg=3
