@@ -138,7 +138,7 @@ bindsym $Mod+Shift+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -f -i"
 # Applications
 bindsym $Mod+Return exec $TERMINAL
 bindsym $Mod+f exec $BROWSER
-bindsym $Mod+r exec --no-startup-id move container to workspace 9: ; workspace 9: ; exec $TERMINAL -e 'ncmpcpp'
+bindsym $Mod+r exec --no-startup-id $TERMINAL -n 'ncmpcpp' -e 'ncmpcpp'
 bindsym $Mod+t exec telegram-desktop
 bindsym $Mod+b exec blueberry
 bindsym $Mod+p [instance="keepassxc-sp"] scratchpad show; [instance="keepassxc-sp"] move position center
@@ -282,6 +282,7 @@ assign [class="Inkscape"] workspace $ws7
 
 # Audio (WS9)
 assign [class="Rhythmbox"] workspace $ws9
+assign [instance="ncmpcpp"] workspace $ws9
 
 # Video (WS10)
 assign [class="obs"] workspace $ws10
