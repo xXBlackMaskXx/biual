@@ -35,11 +35,12 @@ alias pastebin-txt='curl -F c=@- https://ptpb.pw/ <<<'
 alias pastebin-file='curl -F c=@- -F p=1 https://ptpb.pw/ <'
 
 # youtube-dl aliases
-alias yt-video='youtube-dl -f best -o "%(title)s.%(ext)s"'
+alias yt-video='youtube-dl -f bestvideo -o "%(title)s.%(ext)s"'
 alias yt-webm='youtube-dl -f webm -o "%(title)s.%(ext)s"'
 alias yt-audio='youtube-dl -f bestaudio -o "%(title)s.%(ext)s"'
 alias yt-opus='youtube-dl -x --audio-format opus -o "%(title)s.%(ext)s"'
 alias yt-vorbis='youtube-dl -x --audio-format vorbis -o "%(title)s.%(ext)s"'
+alias yt-thumbnail='youtube-dl --write-thumbnail --skip-download -o "%(title)s.%(ext)s"'
 
 # biual aliases
 alias biual='git --git-dir=$HOME/.config/biual-git/ --work-tree=$HOME'
