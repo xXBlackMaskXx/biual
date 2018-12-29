@@ -100,9 +100,10 @@ exec_always --no-startup-id nitrogen --restore
 
 # Run once
 exec --no-startup-id ~/.config/polybar/launch.sh
-exec --no-startup-id mpd
-exec --no-startup-id dunst
+exec --no-startup-id caffeine
 exec --no-startup-id compton
+exec --no-startup-id dunst
+exec --no-startup-id mpd
 exec --no-startup-id redshift -b 1.0:0.85 -t 6500:4000
 # If you have a numpad you may want to enable this and install numlockx
 # exec --no-startup-id numlockx
