@@ -2,8 +2,11 @@
 
 # dmenu prompts
 TYPE="$(printf "Screen\nWindow" | dmenu -i -p 'What do you want to screenshot?')"
+if [ -z "$TYPE" ]; then exit; fi
 SAVE="$(printf "No\nYes"        | dmenu -i -p 'Do you want to copy to clipboard?')"
-TIME="$(printf "0.5\n5\n10\n15" | dmenu -i -p 'How many seconds you want to wait?')"
+if [ -z "$SAVE" ]; then exit; fi
+TIME="$(printf "0.7\n5\n10\n15" | dmenu -i -p 'How many seconds you want to wait?')"
+if [ -z "$TIME" ]; then exit; fi
 
 # Set flag if selected "Window"
 case "$TYPE" in
