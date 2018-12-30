@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 # dmenu prompts
-TYPE="$(printf "Screen\nWindow" | dmenu -i -p 'What do you want to screenshot?')"
+TYPE="$(printf "Screen\nWindow/Area\n" | dmenu -i -p 'What do you want to screenshot?')"
 if [ -z "$TYPE" ]; then exit; fi
 SAVE="$(printf "No\nYes"        | dmenu -i -p 'Do you want to copy to clipboard?')"
 if [ -z "$SAVE" ]; then exit; fi
@@ -10,8 +10,8 @@ if [ -z "$TIME" ]; then exit; fi
 
 # Set flag if selected "Window"
 case "$TYPE" in
-	Window) TYPE="-s -u";;
-	*)      TYPE=""
+	Window/Area) TYPE="-s -u";;
+	*)           TYPE=""
 esac
 
 # Prepere for screenshot
