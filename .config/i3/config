@@ -9,33 +9,33 @@
 
 
 # Xresources      var		value
-set_from_resource $bg		background
-set_from_resource $fg		foreground
-set_from_resource $black	color0
-set_from_resource $black_l	color8 
-set_from_resource $red		color1 
-set_from_resource $red_l	color9
-set_from_resource $green	color2
-set_from_resource $green_l	color10
-set_from_resource $yellow	color3
-set_from_resource $yellow_l	color11
-set_from_resource $blue		color4
-set_from_resource $blue_l	color12
-set_from_resource $magenta	color5
-set_from_resource $red_l	color13
-set_from_resource $cyan		color6
-set_from_resource $cyan_l	color14
-set_from_resource $white	color7
-set_from_resource $white_l	color15
-set $transp				#00000000
+set_from_resource $bg         background
+set_from_resource $fg         foreground
+set_from_resource $black      color0
+set_from_resource $black_l    color8 
+set_from_resource $red        color1 
+set_from_resource $red_l      color9
+set_from_resource $green      color2
+set_from_resource $green_l    color10
+set_from_resource $yellow     color3
+set_from_resource $yellow_l   color11
+set_from_resource $blue	      color4
+set_from_resource $blue_l     color12
+set_from_resource $magenta    color5
+set_from_resource $red_l      color13
+set_from_resource $cyan       color6
+set_from_resource $cyan_l     color14
+set_from_resource $white      color7
+set_from_resource $white_l    color15
+set $transp                   #00000000
 
 
-# class                 bd		bg      	txt     	ind     	child_bd
-client.focused          $black_l	$black_l 	$blue		$blue 	$blue
-client.unfocused        $bg		$bg		$blue		$bg		$bg
-client.focused_inactive $black_l	$black_l	$blue		$bg		$bg
-client.urgent           $bg		$bg		$blue   	$bg		$bg
-client.placeholder      $grey		$fg		$bg     	$grey		$bg
+# class                 bd          bg          txt         ind         child_bd
+client.focused          $black_l    $black_l    $blue       $blue       $blue
+client.unfocused        $bg         $bg         $blue       $bg         $bg
+client.focused_inactive $black_l    $black_l    $blue       $bg         $bg
+client.urgent           $bg         $bg         $blue       $bg         $bg
+client.placeholder      $bg         $bg         $blue       $bg         $bg
 client.background       $bg
 
 # Font
@@ -294,4 +294,3 @@ for_window [instance="keepassxc-sp"] border pixel 3
 for_window [instance="keepassxc-sp"] resize set 800 600
 
 # vim: filetype=i3
-# vim: set ts=6:sw=6
