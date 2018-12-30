@@ -146,8 +146,8 @@ ramp-coreload-5-foreground = ${colors.urgent}
 type = internal/memory
 interval = 3
 format = <label>
-label-padding =    1
-label = %{A1:termite -e "htop -s PERCENT_MEM" & disown:} %percentage_used%%%{A}
+label-padding = 1
+label = %{A1:st -e "htop -s PERCENT_MEM" & disown:} %percentage_used%%%{A}
 
 
 ;~~~~~~~~~~~~~~
@@ -182,7 +182,7 @@ ramp-1 = ""
 ramp-2 = ""
 ramp-3 = ""
 ramp-4 = ""
-ramp-5 = ""
+ramp-5 = ""
 
 ramp-5-foreground = ${colors.urgent}
 format-warn = <label-warn>
@@ -202,8 +202,8 @@ label-volume  = %{A3:pavucontrol & disown:}%percentage:2%%%{A}
 
 format-volume = <ramp-volume> <label-volume>
 
-label-muted = "  muted "
-ramp-volume-0 = ""
+label-muted = "  muted "
+ramp-volume-0 = ""
 ramp-volume-1 = ""
 ramp-volume-2 = ""
 ramp-volume-3 = ""
