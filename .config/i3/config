@@ -71,9 +71,10 @@ set $ws10 "10: "
 
 # Border & Title
 for_window [class="^.*"] border pixel 2, title_format " %title "
+smart_borders on
 
 # Gaps
-gaps inner 10
+gaps inner 5
 gaps outer 0
 
 new_window pixel
