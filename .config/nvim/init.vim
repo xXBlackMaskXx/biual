@@ -21,6 +21,7 @@ set tabstop=4
 set shiftwidth=4
 set ignorecase
 set smartcase
+set bg=light
 
 " Colorscheme
 hi LineNr 			ctermfg=3
