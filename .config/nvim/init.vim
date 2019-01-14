@@ -62,6 +62,11 @@ map <C-o> :tabnew<CR>
 map <C-d> :tabclose<CR>
 map <C-h> :tabprev<CR>
 map <C-l> :tabnext<CR>
+map <S-j> :tabnext<CR>
+map <S-k> :tabprev<CR>
+
+" Man pages!
+map <S-m> :Man<CR>
 
 " Deoplete, autocompletion
 call deoplete#enable()
