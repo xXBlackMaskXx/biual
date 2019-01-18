@@ -29,7 +29,6 @@ set_from_resource $white      color7
 set_from_resource $white_l    color15
 set $transp                   #00000000
 
-
 # class                 bd          bg          txt         ind         child_bd
 client.focused          $black_l    $black_l    $blue       $blue       $blue
 client.unfocused        $bg         $bg         $blue       $bg         $bg
@@ -46,7 +45,7 @@ set $Mod Mod4
 # Moe key (Alt)
 set $Moe Mod1
 
-# Direction Vim keys
+# Direction keys
 set $up k
 set $down j
 set $left h
@@ -95,24 +94,45 @@ bindsym $Mod+minus gaps inner all minus 5
 #  Autostart
 # ~~~~~~~~~~~
 
-# Run everytime
-exec_always --no-startup-id xrdb -load ~/.Xresources
-exec_always --no-startup-id nitrogen --restore
+# Remap buttons
+exec --no-startup-id setxkbmap -option 'caps:ctrl_modifier'  
+exec --no-startup-id xcape -e 'Caps_Lock=Escape'
 
-# Run once
+# Load .Xresources configs
+exec_always --no-startup-id xrdb -load ~/.Xresources
+
+# Hide mouse cursor after X seconds
+exec --no-startup-id unclutter --timeout 5 --jitter 2 &
+
+# That nice bar
 exec --no-startup-id ~/.config/polybar/launch.sh
+
+# Prevent desktop idleness in full-screen mode
 exec --no-startup-id caffeine
+
+# X11 Compositor
 exec --no-startup-id compton
+
+# Notification daemon
 exec --no-startup-id dunst
-exec --no-startup-id mpd
+
+# Music daemon
+exec --no-startup-id mpd 
+
+# Blue light filter
 exec --no-startup-id redshift -b 1.0:0.85 -t 6500:4000
+
 # If you have a numpad you may want to enable this and install numlockx
-# exec --no-startup-id numlockx
+#exec --no-startup-id numlockx
 
 # Polkit, required for authentication
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
 # Keyring for storing saved passwords
-exec --no-startup-id gnome-keyring-daemon --start --components=pkcs11
+exec --no-startup-id gnome-keyring-daemon --start --components=pkcs11,secrets,ssh
+
+# Wallpaper (don't edit directly there, use ~/.script/wallpaper.sh)
+exec --no-startup-id xwallpaper --daemon --maximize ~/.config/wallpaper
 
 # Scratchpad
 exec --no-startup-id keepassxc -name keepassxc-sp
@@ -173,6 +193,9 @@ bindsym $Mod+$Moe+$left exec --no-startup-id light -U 1
 # Backlight - XF86 bindings
 bindsym XF86MonBrightnessUp exec --no-startup-id light -A 1
 bindsym XF86MonBrightnessDown exec --no-startup-id light -U 1
+
+# Fullscreen
+bindsym F11 fullscreen
 
 
 # ~~~~~~~~~~~~~~~~~~~~
