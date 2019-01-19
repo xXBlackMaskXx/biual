@@ -132,7 +132,7 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id gnome-keyring-daemon --start --components=pkcs11,secrets,ssh
 
 # Wallpaper (don't edit directly there, use ~/.script/wallpaper.sh)
-exec --no-startup-id xwallpaper --daemon --maximize ~/.config/wallpaper
+exec --no-startup-id xwallpaper --daemon --zoom ~/.config/wallpaper
 
 # Scratchpad
 exec --no-startup-id keepassxc -name keepassxc-sp
