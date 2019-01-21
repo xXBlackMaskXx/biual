@@ -195,10 +195,10 @@ label-warn-foreground = ${colors.urgent}
 ; Volume / Audio
 ;~~~~~~~~~~~~~~~~
 [module/volume]
-type = internal/alsa
-master-mixer = Master
-label-volume  = %{A3:pavucontrol & disown:}%percentage:2%%%{A}
+type = internal/pulseaudio
+use-ui-max = true
 
+label-volume  = %{A3:pavucontrol & disown:}%percentage:2%%%{A}
 format-volume = <ramp-volume> <label-volume>
 
 label-muted = " muted"
