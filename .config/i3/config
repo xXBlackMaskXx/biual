@@ -56,7 +56,7 @@ set $ws1 "1: "
 set $ws2 "2: "
 set $ws3 "3: "
 set $ws4 "4: "
-set $ws5 "5: "
+set $ws5 "5: "
 set $ws6 "6: "
 set $ws7 "7: "
 set $ws8 "8: "
@@ -138,9 +138,9 @@ exec --no-startup-id xwallpaper --daemon --zoom ~/.config/wallpaper
 exec --no-startup-id keepassxc -name keepassxc-sp
 
 
-# ~~~~~~~~~~~~~~
-#  Key Bindings
-# ~~~~~~~~~~~~~~
+# ~~~~~~~~~~~~~
+#  Keybindings
+# ~~~~~~~~~~~~~
 
 # Restart i3 
 bindsym $Mod+Shift+r restart
@@ -164,6 +164,8 @@ bindsym $Mod+t exec telegram-desktop
 bindsym $Mod+b exec blueberry
 bindsym $Mod+p [instance="keepassxc-sp"] scratchpad show; [instance="keepassxc-sp"] move position center
 bindsym $Mod+u exec --no-startup-id exec ~/.script/dmenu-unicode.sh
+bindsym $Mod+m exec --no-startup-id $TERMINAL -n 'neomutt' -e 'neomutt'
+bindsym $Mod+Shift+m exec --no-startup-id ~/.config/mutt/etc/mailsync.sh
 
 # Compton
 bindsym $Mod+c exec --no-startup-id compton
@@ -279,8 +281,8 @@ bindsym $Mod+Shift+w layout stacking
 bindsym $Mod+e layout toggle split
 
 # Split window
-bindsym $Mod+m split vertical
-bindsym $Mod+n split horizontal
+bindsym $Mod+less split vertical
+bindsym $Mod+greater split horizontal
 default_orientation horizontal
 
 
@@ -294,6 +296,9 @@ assign [class="Firefox"] workspace $ws1
 
 # Texting (WS4)
 assign [class="TelegramDesktop"] workspace $ws4
+
+# Mail (WS5)
+assign [instance="neomutt"] workspace $ws5
 
 # Documents (WS6)
 assign [class="Zathura"] workspace $ws6
@@ -316,5 +321,6 @@ assign [class="vlc"] workspace $ws10
 for_window [instance="keepassxc-sp"] move scratchpad
 for_window [instance="keepassxc-sp"] border pixel 3
 for_window [instance="keepassxc-sp"] resize set 800 600
+
 
 # vim: filetype=i3

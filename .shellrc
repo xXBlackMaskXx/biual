@@ -17,6 +17,7 @@ export LESS_TERMCAP_ue=$(tput sgr0)
 export LESS_TERMCAP_us=$(tput setaf 2)
 
 # Aliases
+alias mw="~/.config/mutt/mutt-wizard.sh"
 alias ls='ls --color=auto --group-directories-first'
 alias nc='ncmpcpp'
 alias ra='ranger'
