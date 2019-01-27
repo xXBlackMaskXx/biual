@@ -15,9 +15,6 @@ if ! zgen saved; then
 	zgen oh-my-zsh 
 	zgen oh-my-zsh plugins/command-not-found
 	zgen oh-my-zsh plugins/vi-mode
-	
-	# Theme
-	zgen load dawidpotocki/agnoster-zsh-theme agnoster.zsh-theme
 
 zgen save
 fi
@@ -28,5 +25,12 @@ source ~/.shellrc
 # Vim mode
 bindkey -v
 
+# Zsh prompt
+PROMPT='%B%F{blue}%n%F{blue}@%F{blue}%m%f%b in %B%F{green}%~%f%b$(git_prompt_info)
+%(?:$ :%F{red}$ )%f'
 
-fpath=($HOME/.zsh-completions $fpath)
+ZSH_THEME_GIT_PROMPT_PREFIX=' on %B%F{magenta}'
+ZSH_THEME_GIT_PROMPT_SUFFIX='%f%b'
+ZSH_THEME_GIT_PROMPT_DIRTY='%F{yellow}*'
+ZSH_THEME_GIT_PROMPT_UNTRACKED='%F{yellow}*'
+ZSH_THEME_GIT_PROMPT_CLEAN=''
