@@ -28,5 +28,5 @@ source ~/.shellrc
 # Vim mode
 bindkey -v
 
-# Sudo prompt
-export SUDO_PROMPT="$(tput setaf 1) sudo $(tput setab 1)$(tput setaf 0)$(echo "\uE0B0")$(tput setab 1)$(tput setaf 0) password for %p $(tput sgr0)$(tput setaf 1)$(echo "\uE0B0")$(tput sgr0) "
+
+fpath=($HOME/.zsh-completions $fpath)

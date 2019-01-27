@@ -60,7 +60,7 @@ set $ws5 "5: "
 set $ws6 "6: "
 set $ws7 "7: "
 set $ws8 "8: "
-set $ws9 "9: "
+set $ws9 "9: "
 set $ws10 "10: "
 
 
@@ -94,8 +94,8 @@ bindsym $Mod+minus gaps inner all minus 5
 #  Autostart
 # ~~~~~~~~~~~
 
-# Remap buttons
-exec --no-startup-id setxkbmap -option 'caps:ctrl_modifier'  
+# Remap buttons + keyboard layout
+exec --no-startup-id setxkbmap pl -option 'caps:ctrl_modifier'  
 exec --no-startup-id xcape -e 'Caps_Lock=Escape'
 
 # Load .Xresources configs
@@ -105,7 +105,7 @@ exec_always --no-startup-id xrdb -load ~/.Xresources
 exec --no-startup-id unclutter --timeout 5 --jitter 2 &
 
 # That nice bar
-exec --no-startup-id ~/.config/polybar/launch.sh
+exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # Prevent desktop idleness in full-screen mode
 exec --no-startup-id caffeine
@@ -119,14 +119,11 @@ exec --no-startup-id dunst
 # Music daemon
 exec --no-startup-id mpd 
 
-# Blue light filter
-exec --no-startup-id redshift -b 1.0:0.85 -t 6500:4000
-
 # If you have a numpad you may want to enable this and install numlockx
 #exec --no-startup-id numlockx
 
 # Polkit, required for authentication
-exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec --no-startup-id /usr/libexec/xfce-polkit
 
 # Keyring for storing saved passwords
 exec --no-startup-id gnome-keyring-daemon --start --components=pkcs11,secrets,ssh
@@ -160,12 +157,14 @@ bindsym $Mod+Shift+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -f -i"
 bindsym $Mod+Return exec $TERMINAL
 bindsym $Mod+f exec $BROWSER
 bindsym $Mod+r exec --no-startup-id $TERMINAL -n 'ncmpcpp' -e 'ncmpcpp'
-bindsym $Mod+t exec telegram-desktop
-bindsym $Mod+b exec blueberry
+bindsym $Mod+t exec Telegram
+bindsym $Mod+b exec blueman-manager
 bindsym $Mod+p [instance="keepassxc-sp"] scratchpad show; [instance="keepassxc-sp"] move position center
 bindsym $Mod+u exec --no-startup-id exec ~/.script/dmenu-unicode.sh
 bindsym $Mod+m exec --no-startup-id $TERMINAL -n 'neomutt' -e 'neomutt'
 bindsym $Mod+Shift+m exec --no-startup-id ~/.config/mutt/etc/mailsync.sh
+bindsym $Mod+n exec --no-startup-id redshift -O 3500 -b 0.9
+bindsym $Mod+Shift+n exec --no-startup-id redshift -x
 
 # Compton
 bindsym $Mod+c exec --no-startup-id compton
@@ -321,6 +320,9 @@ assign [class="vlc"] workspace $ws10
 for_window [instance="keepassxc-sp"] move scratchpad
 for_window [instance="keepassxc-sp"] border pixel 3
 for_window [instance="keepassxc-sp"] resize set 800 600
+
+# None
+for_window [class="Gsimplecal"] floating enable
 
 
 # vim: filetype=i3

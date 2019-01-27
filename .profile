@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+export PATH="$PATH:$HOME/.local/bin"
 export QT_QPA_PLATFORMTHEME=gtk2
 export XDG_CONFIG_HOME="$HOME/.config"
 export BROWSER="qutebrowser"

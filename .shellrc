@@ -16,6 +16,9 @@ export LESS_TERMCAP_so=$(tput setab 4 && tput setaf 0)
 export LESS_TERMCAP_ue=$(tput sgr0)
 export LESS_TERMCAP_us=$(tput setaf 2)
 
+# Sudo prompt
+export SUDO_PROMPT="$(printf "\033[1;31m")[sudo]$(printf "\033[0m") password for %p: "
+
 # Aliases
 alias mw="~/.config/mutt/mutt-wizard.sh"
 alias ls='ls --color=auto --group-directories-first'
@@ -25,6 +28,7 @@ alias vi='nvim'
 alias vim='nvim'
 alias nvi='nvim'
 alias please='sudo $(fc -ln -1)'
+alias man='man'
 alias woman='man'
 
 # cURL aliases
@@ -46,5 +50,7 @@ alias yt-thumbnail='youtube-dl --write-thumbnail --skip-download -o "%(title)s.%
 # biual aliases
 alias biual='git --git-dir=$HOME/.config/biual-git/ --work-tree=$HOME'
 alias biual-pull='git --git-dir=$HOME/.config/biual-git/ --work-tree=$HOME pull && git --git-dir=$HOME/.config/biual-git/ --work-tree=$HOME update-index --assume-unchanged ~/LICENSE ~/README.md && rm -rf ~/LICENSE ~/README.md && git --git-dir=$HOME/.config/biual-git/ --work-tree=$HOME submodule update --recursive'
+
+export $(dbus-launch)
 
 # vim: filetype=zsh
