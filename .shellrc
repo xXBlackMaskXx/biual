@@ -28,8 +28,8 @@ alias vi='nvim'
 alias vim='nvim'
 alias nvi='nvim'
 alias please='sudo $(fc -ln -1)'
-alias man='man'
 alias woman='man'
+alias sudo='sudo '
 
 # cURL aliases
 alias wttr='curl wttr.in'
@@ -46,6 +46,11 @@ alias yt-audio='youtube-dl -f bestaudio -o "%(title)s.%(ext)s"'
 alias yt-opus='youtube-dl -x --audio-format opus -o "%(title)s.%(ext)s"'
 alias yt-vorbis='youtube-dl -x --audio-format vorbis -o "%(title)s.%(ext)s"'
 alias yt-thumbnail='youtube-dl --write-thumbnail --skip-download -o "%(title)s.%(ext)s"'
+
+# xbps aliases
+alias xbpi='xbps-install'
+alias xbpr='xbps-remove'
+alias xbpq='xbps-query'
 
 # biual aliases
 alias biual='git --git-dir=$HOME/.config/biual-git/ --work-tree=$HOME'

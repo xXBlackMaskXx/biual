@@ -25,6 +25,16 @@ source ~/.shellrc
 # Vim mode
 bindkey -v
 
+# Enable alias autocompletion
+compdef woman=man
+compdef vi=nvim
+compdef vim=nvim
+compdef nvi=nvim
+compdef xbpi=xbps-install
+compdef xbpr=xbps-remove
+compdef xbpq=xbps-query
+compdef biual=git
+
 # Zsh prompt
 PROMPT='%B%F{blue}%n%F{blue}@%F{blue}%m%f%b in %B%F{green}%~%f%b$(git_prompt_info)
 %(?:$ :%F{red}$ )%f'
