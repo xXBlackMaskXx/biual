@@ -122,11 +122,11 @@ exec --no-startup-id mpd
 # If you have a numpad you may want to enable this and install numlockx
 #exec --no-startup-id numlockx
 
-# Polkit, required for authentication
-exec --no-startup-id /usr/libexec/xfce-polkit
-
 # Keyring for storing saved passwords
 exec --no-startup-id gnome-keyring-daemon --start --components=pkcs11,secrets,ssh
+
+# Polkit, required for authentication
+exec --no-startup-id /usr/libexec/polkit-gnome-authentication-agent-1
 
 # Wallpaper (don't edit directly there, use ~/.script/wallpaper.sh)
 exec --no-startup-id xwallpaper --daemon --zoom ~/.config/wallpaper
