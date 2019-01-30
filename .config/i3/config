@@ -165,6 +165,7 @@ bindsym $Mod+m exec --no-startup-id $TERMINAL -n 'neomutt' -e 'neomutt'
 bindsym $Mod+Shift+m exec --no-startup-id ~/.config/mutt/etc/mailsync.sh
 bindsym $Mod+n exec --no-startup-id redshift -O 3500 -b 0.9
 bindsym $Mod+Shift+n exec --no-startup-id redshift -x
+bindsym $Mod+g exec --no-startup-id gcolor2
 
 # Compton
 bindsym $Mod+c exec --no-startup-id compton
