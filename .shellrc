@@ -52,8 +52,4 @@ alias xbpi='xbps-install'
 alias xbpr='xbps-remove'
 alias xbpq='xbps-query'
 
-# biual aliases
-alias biual='git --git-dir=$HOME/.config/biual-git/ --work-tree=$HOME'
-alias biual-pull='git --git-dir=$HOME/.config/biual-git/ --work-tree=$HOME pull && git --git-dir=$HOME/.config/biual-git/ --work-tree=$HOME update-index --assume-unchanged ~/LICENSE ~/README.md && rm -rf ~/LICENSE ~/README.md && git --git-dir=$HOME/.config/biual-git/ --work-tree=$HOME submodule update --recursive'
-
 # vim: filetype=zsh
