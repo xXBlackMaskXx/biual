@@ -1,8 +1,8 @@
 # biual
 
-My fine .dotfiles for Arch Linux.
+My fine dotfiles for Void Linux.
 
-## [Installation guide (English)](https://gitlab.com/dawidpotocki/biual/wikis/English/Installation-guide)
+## [Installation guide (English)]   (https://gitlab.com/dawidpotocki/biual/wikis/English/Installation-guide)
 To get started, checkout installation guide!
 
 ## [Instrukcja instalacji (Polski)](https://gitlab.com/dawidpotocki/biual/wikis/Polski/Instrukcja-instalacji)
