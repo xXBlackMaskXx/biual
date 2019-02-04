@@ -11,6 +11,7 @@
 ## alternative location to config file which defines that while launching
 ## ncmpcpp.
 ncmpcpp_directory = ~/.config/ncmpcpp
+mpd_music_dir = ~/Music
 
 ##
 ## Directory for storing downloaded lyrics. It defaults to ~/.lyrics since other
