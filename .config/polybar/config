@@ -43,7 +43,6 @@ format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 
 
-
 ;~~~~~~~~~~~~~~~~~~
 ; Top Bar Settings
 ;~~~~~~~~~~~~~~~~~~
@@ -71,9 +70,8 @@ bottom = false
 line-size = 2
 
 font-0 = "DejaVu Sans Mono:pixelsize=10:antialias=true;2"
-font-1 = "DejaVu Sans Mono for Powerline:pixelsize=20:antialias=true;3"
-font-2 = "Font Awesome 5 Brands:pixelsize=13:antialias=true;2"
-font-3 = "Font Awesome 5 Free:style=Solid:pixelsize=12:antialias=true;2"
+font-1 = "Font Awesome 5 Brands:pixelsize=13:antialias=true;2"
+font-2 = "Font Awesome 5 Free:style=Solid:pixelsize=12:antialias=true;2"
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -85,6 +83,7 @@ padding-left = 1
 offset-x = 0
 offset-y = 0
 cursor-click = pointer
+
 
 ;~~~~~~~~~~~~~~~
 ; i3 Workspaces
