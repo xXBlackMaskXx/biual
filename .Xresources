@@ -1,37 +1,37 @@
-! Color scheme
-*.background: #0a0a30
-*.foreground: #9b9cb5
+! special
+*.foreground: #aaaaaa
+*.background: #1d1f30
 
 ! black
-*.color0:     #0a0a30
-*.color8:     #10105b
+*.color0:     #1d1f30
+*.color8:     #2a3145
 
 ! red
-*.color1:     #aa2f46
-*.color9:     #aa2f46
+*.color1:     #b54848
+*.color9:     #b54848
 
-! green 
-*.color2:     #2a9361
-*.color10:    #2a9361
+! green
+*.color2:     #7c933f
+*.color10:    #7c933f
 
 ! yellow
-*.color3:     #a0782e
-*.color11:    #a0782e
+*.color3:     #af774f
+*.color11:    #af774f
 
 ! blue
-*.color4:     #226ebf
-*.color12:    #226ebf
+*.color4:     #5f819d
+*.color12:    #5f819d
 
 ! magenta
-*.color5:     #aa2f83
-*.color13:    #aa2f83
+*.color5:     #915b8d
+*.color13:    #915b8d
 
 ! cyan
-*.color6:     #2a9392
-*.color14:    #2a9392
+*.color6:     #5e8d87
+*.color14:    #5e8d87
 
 ! white
-*.color7:     #9b9cb5
-*.color15:    #9b9cb5
+*.color7:     #aaaaaa
+*.color15:    #aaaaaa
 
-*.font:	DejaVu Sans Mono:pixelsize=15:antialias=true:autohint=true:hintstyle=hintmedium
+st.font: DejaVu Sans Mono:pixelsize=15:antialias=true:autohint=true:hintstyle=hintmedium

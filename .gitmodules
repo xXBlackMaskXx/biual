@@ -43,3 +43,6 @@
 [submodule ".config/mutt"]
 	path = .config/mutt
 	url = https://gitlab.com/dawidpotocki/mutt-wizard.git
+[submodule ".themes/biual-theme"]
+	path = .themes/biual-theme
+	url = https://gitlab.com/dawidpotocki/biual-gtk-theme
