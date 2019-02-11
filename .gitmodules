@@ -36,13 +36,16 @@
 	url = https://gitlab.com/dawidpotocki/zgen.git
 [submodule ".config/dmenu"]
 	path = .config/dmenu
-	url = https://gitlab.com/dawidpotocki/dmenu
+	url = https://gitlab.com/dawidpotocki/dmenu.git
 [submodule ".config/st"]
 	path = .config/st
-	url = https://gitlab.com/dawidpotocki/st
+	url = https://gitlab.com/dawidpotocki/st.git
 [submodule ".config/mutt"]
 	path = .config/mutt
 	url = https://gitlab.com/dawidpotocki/mutt-wizard.git
 [submodule ".themes/biual-theme"]
 	path = .themes/biual-theme
-	url = https://gitlab.com/dawidpotocki/biual-gtk-theme
+	url = https://gitlab.com/dawidpotocki/biual-gtk-theme.git
+[submodule ".local/share/sxiv"]
+	path = .local/share/sxiv
+	url = https://gitlab.com/dawidpotocki/sxiv.git
