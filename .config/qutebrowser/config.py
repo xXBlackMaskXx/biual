@@ -27,8 +27,9 @@ c.content.user_stylesheets = [
     'css/main.css',
 ]
 
-# Change Startpages
-config.set('url.start_pages', 'https://start.duckduckgo.com')
+# Change start pages + search engine
+config.set('url.start_pages', 'https://start.duckduckgo.com/?kae=d&k5=2&kp=-2&kaj=m&kao=-1&kav=1&kaq=-1&kam=osm&kap=-1&kak=-1&kax=-1&kay=b&kw=n&ks=n&ko=1&kx=5f819d&kaa=aaaaaa&kj=1d1f30&k8=5f819d&kt=p&k9=aaaaaa&k7=1d1f30')
+config.set('url.searchengines', {"DEFAULT": 'https://start.duckduckgo.com/?q={}&kae=d&k5=2&kp=-2&kaj=m&kao=-1&kav=1&kaq=-1&kam=osm&kap=-1&kak=-1&kax=-1&kay=b&kw=n&ks=n&ko=1&kx=5f819d&kaa=aaaaaa&kj=1d1f30&k8=5f819d&kt=p&k9=aaaaaa&k7=1d1f30'})
 
 # Tab settings
 config.set('tabs.padding', {"top": 1, "bottom": 2, "left": 5, "right": 5})
