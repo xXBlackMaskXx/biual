@@ -163,7 +163,7 @@ bindsym $Mod+p [instance="keepassxc-sp"] scratchpad show; [instance="keepassxc-s
 bindsym $Mod+u exec --no-startup-id exec ~/.script/dmenu-unicode.sh
 bindsym $Mod+m exec --no-startup-id $TERMINAL -n 'neomutt' -e 'neomutt'
 bindsym $Mod+Shift+m exec --no-startup-id ~/.config/mutt/etc/mailsync.sh
-bindsym $Mod+n exec --no-startup-id redshift -O 3500 -b 0.9
+bindsym $Mod+n exec --no-startup-id redshift -O 3500 -b 0.8
 bindsym $Mod+Shift+n exec --no-startup-id redshift -x
 bindsym $Mod+g exec --no-startup-id gcolor2
 
@@ -322,7 +322,7 @@ for_window [instance="keepassxc-sp"] move scratchpad
 for_window [instance="keepassxc-sp"] border pixel 3
 for_window [instance="keepassxc-sp"] resize set 800 600
 
-# None
+# Other
 for_window [class="Gsimplecal"] floating enable
 
 
