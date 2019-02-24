@@ -30,6 +30,7 @@ alias nvi='nvim'
 alias please='sudo $(fc -ln -1)'
 alias woman='man'
 alias sudo='sudo '
+alias doas='doas '
 
 # cURL aliases
 alias wttr='curl wttr.in'
