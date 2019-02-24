@@ -19,6 +19,7 @@ call plug#begin('~/.config/nvim/bundle')
 	Plug 'https://github.com/itchyny/lightline.vim'
 		Plug '~/.config/nvim/bundle/lightline-biual'
 	Plug 'https://github.com/rafaqz/ranger.vim'
+	Plug 'https://github.com/vim-python/python-syntax'
 	Plug 'https://github.com/romainl/vim-cool'
 	Plug 'https://github.com/tpope/vim-commentary'
 	Plug 'https://github.com/bfrg/vim-cpp-modern'
@@ -57,6 +58,7 @@ hi SpellLocal       ctermfg=0   ctermbg=5   cterm=underline
 hi Pmenu            ctermbg=0   ctermfg=4
 hi PmenuSel         ctermbg=8   ctermfg=4
 hi PmenuSbar        ctermbg=0
+let g:python_highlight_all = 1
 
 " Lightline
 set noshowmode
