@@ -58,6 +58,9 @@ hi SpellLocal       ctermfg=0   ctermbg=5   cterm=underline
 hi Pmenu            ctermbg=0   ctermfg=4
 hi PmenuSel         ctermbg=8   ctermfg=4
 hi PmenuSbar        ctermbg=0
+hi DiffAdd          ctermbg=2   ctermfg=0
+hi DiffChange       ctermbg=4   ctermfg=0
+hi DiffDelete       ctermbg=1   ctermfg=0
 let g:python_highlight_all = 1
 
 " Lightline
