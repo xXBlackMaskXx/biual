@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=Neomutt
+Exec=st -n 'neomutt' -e neomutt %u
