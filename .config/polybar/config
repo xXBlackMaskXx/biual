@@ -67,11 +67,11 @@ border-top-size = 0
 border-bottom-size = 0
 radius = 0
 bottom = false
-line-size = 2
+overline-size = 2
 
-font-0 = "DejaVu Sans Mono:pixelsize=10:antialias=true;2"
-font-1 = "Font Awesome 5 Brands:pixelsize=13:antialias=true;2"
-font-2 = "Font Awesome 5 Free:style=Solid:pixelsize=12:antialias=true;2"
+font-0 = "DejaVu Sans Mono:pixelsize=10:antialias=true;3"
+font-1 = "Font Awesome 5 Brands:pixelsize=13:antialias=true;3"
+font-2 = "Font Awesome 5 Free:style=Solid:pixelsize=12:antialias=true;3"
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -104,6 +104,7 @@ label-focused-padding = 2
 label-focused-background = ${colors.darkgrey}
 label-focused-foreground = ${colors.foreground}
 label-focused-underline  = ${colors.foreground}
+label-focused-overline  = ${colors.foreground}
 
 label-unfocused = %index% %name%
 label-unfocused-padding = 1
