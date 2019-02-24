@@ -7,6 +7,7 @@ export BROWSER="qutebrowser"
 export TERMINAL="st"
 export EDITOR="nvim"
 export SSH_AUTH_SOCK
+export $(dbus-launch)
 
 # Start graphical server if i3 not already running
 [ "$(tty)" = "/dev/tty1" ] && ! pgrep -x i3 >/dev/null && exec startx :0
