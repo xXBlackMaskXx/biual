@@ -85,14 +85,14 @@ autocmd OptionSet guicursor noautocmd set guicursor=
 
 " Tab Managment
 map <C-o> :tabnew<CR>
-map <C-d> :tabclose<CR>
+map <C-x> :tabclose<CR>
 map <C-h> :tabprev<CR>
 map <C-l> :tabnext<CR>
 map <S-j> :tabnext<CR>
 map <S-k> :tabprev<CR>
 
 " Man pages!
-map <S-m> :Man<CR>
+map <C-S-?> :Man<CR>
 
 " Deoplete, autocompletion
 let g:deoplete#enable_at_startup = 1
