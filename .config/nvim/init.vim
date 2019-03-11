@@ -10,10 +10,14 @@
 " Load vim-plug for plugins
 call plug#begin('~/.config/nvim/bundle')
 
-	Plug 'https://github.com/Shougo/deoplete.nvim'
+	Plug 'https://github.com/Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 		Plug 'https://github.com/Shougo/deoplete-clangx'
 		Plug 'https://github.com/deoplete-plugins/deoplete-jedi'
+		Plug 'https://github.com/carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
+		Plug 'https://github.com/Shougo/neco-vim'
 		Plug 'https://github.com/Shougo/neoinclude.vim'
+	Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
+		Plug 'junegunn/fzf.vim'
 	Plug 'https://github.com/junegunn/goyo.vim'
 	Plug '~/.config/nvim/bundle/i3-vim-syntax'
 	Plug 'https://github.com/itchyny/lightline.vim'
@@ -22,8 +26,10 @@ call plug#begin('~/.config/nvim/bundle')
 	Plug 'https://github.com/vim-python/python-syntax'
 	Plug 'https://github.com/romainl/vim-cool'
 	Plug 'https://github.com/tpope/vim-commentary'
+	Plug 'https://github.com/tpope/vim-fugitive'
 	Plug 'https://github.com/bfrg/vim-cpp-modern'
 	Plug 'https://github.com/itchyny/vim-gitbranch'
+	Plug 'https://github.com/jelera/vim-javascript-syntax'
 	Plug 'https://github.com/tpope/vim-surround'
 	Plug 'https://github.com/tpope/vim-repeat'
 	Plug 'https://github.com/reedes/vim-pencil'
@@ -61,6 +67,10 @@ hi PmenuSbar        ctermbg=0
 hi DiffAdd          ctermbg=2   ctermfg=0
 hi DiffChange       ctermbg=4   ctermfg=0
 hi DiffDelete       ctermbg=1   ctermfg=0
+hi Folded           ctermbg=8
+hi FoldColumn       ctermbg=8
+
+" Syntax highlighting
 let g:python_highlight_all = 1
 
 " Lightline
@@ -85,7 +95,7 @@ autocmd OptionSet guicursor noautocmd set guicursor=
 
 " Tab Managment
 map <C-o> :tabnew<CR>
-map <C-x> :tabclose<CR>
+map <C-c> :tabclose<CR>
 map <C-h> :tabprev<CR>
 map <C-l> :tabnext<CR>
 map <S-j> :tabnext<CR>
@@ -123,3 +133,16 @@ map <F8> :Goyo<CR>
 " Toggle Pencil, wrapping text
 map <F9> :PencilSoft<CR>
 map <F10> :PencilHard<CR>
+
+" fzf, fuzzy finder
+nnoremap <C-p> :Files<CR>
+nnoremap <C-g> :GFiles<CR>
+let g:fzf_action = {
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-x': 'split',
+  \ 'ctrl-v': 'vsplit' }
+
+
+" Python paths, needed for virtualenvs
+let g:python3_host_prog = '/usr/bin/python3'
+let g:python_host_prog = '/usr/bin/python2'
