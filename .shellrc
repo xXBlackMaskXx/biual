@@ -16,6 +16,10 @@ export LESS_TERMCAP_so=$(tput setab 4 && tput setaf 0)
 export LESS_TERMCAP_ue=$(tput sgr0)
 export LESS_TERMCAP_us=$(tput setaf 2)
 
+# Path for man pages
+unset MANPATH
+MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
+
 # Sudo prompt
 export SUDO_PROMPT="$(printf "\033[1;31m")[sudo]$(printf "\033[0m") password for %p: "
 
@@ -52,5 +56,11 @@ alias yt-thumbnail='youtube-dl --write-thumbnail --skip-download -o "%(title)s.%
 alias xbpi='xbps-install'
 alias xbpr='xbps-remove'
 alias xbpq='xbps-query'
+
+# fzf "aliases"
+f()   { find | fzf | xargs -r $EDITOR ;}
+cdf() { cd `find | fzf` ;}
+raf() { ranger `find | fzf` ;}
+
 
 # vim: filetype=zsh
