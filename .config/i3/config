@@ -294,6 +294,9 @@ default_orientation horizontal
 assign [class="qutebrowser"] workspace $ws1
 assign [class="Firefox"] workspace $ws1
 
+# Coding (WS2)
+assign [class="Code - OSS"] workspace $ws2
+
 # Texting (WS4)
 assign [class="TelegramDesktop"] workspace $ws4
 
