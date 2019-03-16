@@ -1,3 +1,25 @@
+set smooth-scroll true
 set selection-clipboard clipboard
 set first-page-column 1:1
 map i recolor
+
+set default-bg "#1d1f30"
+set recolor-darkcolor "#aaaaaa"
+set recolor-lightcolor "#1d1f30"
+
+set inputbar-bg "#1d1f30"
+set inputbar-fg "#aaaaaa"
+set notification-bg "#1d1f30"
+set notification-fg "#aaaaaa"
+set notification-error-bg "#b54848"
+set notification-error-fg "#aaaaaa"
+set notification-warning-bg "#b54848"
+set notification-warning-fg "#aaaaaa"
+set statusbar-bg "#1d1f30"
+set statusbar-fg "#aaaaaa"
+set index-bg "#1d1f30"
+set index-fg "#aaaaaa"
+set index-active-bg "#aaaaaa"
+set index-active-fg "#1d1f30"
+set render-loading-bg "#1d1f30"
+set render-loading-fg "#aaaaaa"
