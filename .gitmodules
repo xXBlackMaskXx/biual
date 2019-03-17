@@ -18,4 +18,4 @@
 	url = https://gitlab.com/dawidpotocki/sxiv.git
 [submodule ".mozilla/firefox"]
 	path = .mozilla/firefox
-	url = https://gitlab.com/dawidpotocki/biualfox
+	url = https://gitlab.com/dawidpotocki/biualfox.git
