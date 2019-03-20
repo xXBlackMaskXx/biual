@@ -54,9 +54,8 @@ alias xbpr='xbps-remove'
 alias xbpq='xbps-query'
 
 # fzf "aliases"
-f()   { find | fzf | xargs -r $EDITOR ;}
-cdf() { cd `find | fzf` ;}
-raf() { ranger `find | fzf` ;}
-
+f()   { find ./* -type f | fzf | xargs -r $EDITOR ;}
+cdf() { cd `find ./* -type d | fzf` ;}
+raf() { ranger `find ./* -type d | fzf` ;}
 
 # vim: filetype=zsh
