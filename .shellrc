@@ -7,6 +7,9 @@
 #
 
 
+# Source private/sensitive configs
+source ~/.privaterc &> /dev/null
+
 # Less pager colors
 export LESS_TERMCAP_mb=$(tput setaf 4)
 export LESS_TERMCAP_md=$(tput setaf 4)
