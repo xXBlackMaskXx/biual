@@ -14,6 +14,7 @@ call plug#begin('~/.config/nvim/bundle')
 		Plug 'https://github.com/Shougo/deoplete-clangx'
 		Plug 'https://github.com/deoplete-plugins/deoplete-jedi'
 		Plug 'https://github.com/carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
+		Plug 'https://github.com/deoplete-plugins/deoplete-zsh'
 		Plug 'https://github.com/Shougo/neco-vim'
 		Plug 'https://github.com/Shougo/neoinclude.vim'
 	Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
@@ -27,6 +28,8 @@ call plug#begin('~/.config/nvim/bundle')
 	Plug 'https://github.com/romainl/vim-cool'
 	Plug 'https://github.com/tpope/vim-commentary'
 	Plug 'https://github.com/tpope/vim-fugitive'
+		Plug 'https://github.com/shumphrey/fugitive-gitlab.vim'
+		Plug 'https://github.com/tpope/vim-rhubarb'
 	Plug 'https://github.com/bfrg/vim-cpp-modern'
 	Plug 'https://github.com/itchyny/vim-gitbranch'
 	Plug 'https://github.com/jelera/vim-javascript-syntax'
@@ -92,6 +95,9 @@ let g:lightline = {
 " Disable changing cursor to line
 set guicursor=
 autocmd OptionSet guicursor noautocmd set guicursor=
+
+" Remove endline
+map <S-u> :s/\n/ <CR>
 
 " Tab Managment
 map <C-o> :tabnew<CR>
