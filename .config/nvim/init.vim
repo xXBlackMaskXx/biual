@@ -44,7 +44,7 @@ call plug#end()
 " Basic stuff
 syntax on
 filetype plugin indent on
-set smartindent
+set autoindent
 set smarttab
 set nu relativenumber
 set clipboard=unnamedplus
