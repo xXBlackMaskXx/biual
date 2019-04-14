@@ -17,8 +17,8 @@ call plug#begin('~/.config/nvim/bundle')
 		Plug 'https://github.com/deoplete-plugins/deoplete-zsh'
 		Plug 'https://github.com/Shougo/neco-vim'
 		Plug 'https://github.com/Shougo/neoinclude.vim'
-	Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
-		Plug 'junegunn/fzf.vim'
+	Plug 'https://github.com/junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
+		Plug 'https://github.com/junegunn/fzf.vim'
 	Plug 'https://github.com/junegunn/goyo.vim'
 	Plug '~/.config/nvim/bundle/i3-vim-syntax'
 	Plug 'https://github.com/itchyny/lightline.vim'
@@ -37,6 +37,7 @@ call plug#begin('~/.config/nvim/bundle')
 	Plug 'https://github.com/tpope/vim-repeat'
 	Plug 'https://github.com/reedes/vim-pencil'
 	Plug 'https://github.com/tpope/vim-speeddating'
+	Plug 'https://github.com/cespare/vim-toml'
 
 call plug#end()
 
