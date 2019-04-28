@@ -55,7 +55,7 @@ monitor-strict = false
 
 modules-left   = i3
 modules-center =
-modules-right  = wireless-network seperator battery seperator volume seperator clock
+modules-right  = wireless-network | battery | volume simple_mpd clock
 
 ;tray-position = right
 ;tray-padding = 2
@@ -208,6 +208,42 @@ ramp-volume-2 = ""
 ramp-volume-3 = ""
 
 
+;;~~~~~
+;; MPD
+;;~~~~~~
+;[module/mpd]
+;type = internal/mpd
+
+;; Host where mpd is running (either ip or domain name)
+;; Can also be the full path to a unix socket where mpd is running.
+;host = 127.0.0.1
+;port = 6600
+
+;; Seconds to sleep between progressbar/song timer sync
+;; Default: 1
+;interval = 2
+
+;label-song = %title%
+;format-online =  <label-song>
+;label-offline =  mpd doesn't give a fuck
+
+;; Only applies if <bar-progress> is used
+;bar-progress-width = 3
+;bar-progress-indicator = |
+;bar-progress-fill = ─
+;bar-progress-empty = ─
+
+
+;~~~~~
+; MPD
+;~~~~~
+[module/simple_mpd]
+type = custom/script
+
+interval = 5
+exec = ~/.script/polybar-mpd.sh
+
+
 ;~~~~~~~~~
 ; Battery
 ;~~~~~~~~~
@@ -316,7 +352,7 @@ format-connected-foreground = ${colors.foreground}
 ;~~~~~~~~~~~
 ; Seperator
 ;~~~~~~~~~~~
-[module/seperator]
+[module/|]
 type = custom/text
 content = " "
 
