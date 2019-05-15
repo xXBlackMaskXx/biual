@@ -294,12 +294,17 @@ default_orientation horizontal
 # Browsers (WS1)
 assign [class="qutebrowser"] workspace $ws1
 assign [class="Firefox"] workspace $ws1
+assign [class="Tor Browser"] workspace $ws1
+for_window [class="Tor Browser"] floating enable
+for_window [class="Tor Browser"] move position center
 
 # Coding (WS2)
 assign [class="Code - OSS"] workspace $ws2
 
-# Texting (WS4)
+# Messaging (WS4)
 assign [class="TelegramDesktop"] workspace $ws4
+assign [class="Riot"] workspace $ws4
+assign [class="Signal"] workspace $ws4
 
 # Mail (WS5)
 assign [instance="neomutt"] workspace $ws5
@@ -312,6 +317,9 @@ assign [class="libreoffice"] workspace $ws6
 # Graphics (WS7)
 assign [class="Gimp"] workspace $ws7
 assign [class="Inkscape"] workspace $ws7
+
+# Gaming
+assign [class="retroarch"] workspace $ws8
 
 # Audio (WS9)
 assign [class="Rhythmbox"] workspace $ws9
