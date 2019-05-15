@@ -10,6 +10,7 @@
 " Load vim-plug for plugins
 call plug#begin('~/.config/nvim/bundle')
 
+	Plug 'https://github.com/ambv/black'
 	Plug 'https://github.com/Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 		Plug 'https://github.com/Shougo/deoplete-clangx'
 		Plug 'https://github.com/deoplete-plugins/deoplete-jedi'
@@ -130,6 +131,9 @@ endfunction"}}}
 " Open Ranger, file manager
 map <C-\> :RangerEdit<CR>
 
+" Black, Python code formatter
+map <C-b> :Black<CR>
+
 " Spell-check (English US and Polish)
 map <F6> :setlocal spell! spelllang=en_us<CR>
 map <F7> :setlocal spell! spelllang=pl<CR>
@@ -153,3 +157,6 @@ let g:fzf_action = {
 " Python paths, needed for virtualenvs
 let g:python3_host_prog = '/usr/bin/python3'
 let g:python_host_prog = '/usr/bin/python2'
+
+" Fix https://github.com/junegunn/vim-plug/issues/502
+let g:plug_threads = 1
