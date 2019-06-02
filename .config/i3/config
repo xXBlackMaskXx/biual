@@ -181,6 +181,11 @@ bindsym $Mod+x exec --no-startup-id ~/.script/dmenu-logout.sh
 # Screenshot
 bindsym Print exec --no-startup-id ~/.script/dmenu-screenshot.sh
 
+# Center floating app
+bindsym $Mod+s move position center
+# Move to corner
+bindsym $Mod+Shift+s exec --no-startup-id ~/.script/i3-corner.sh 3
+
 # Audio - Vim bindings
 bindsym $Mod+$Moe+$up exec --no-startup-id pamixer -i 1
 bindsym $Mod+$Moe+$down exec --no-startup-id pamixer -d 1
@@ -262,10 +267,10 @@ bindsym $Moe+p focus parent
 bindsym $Moe+c focus child
 
 # Move focused window
-bindsym $Mod+Shift+$left  move left  20px
-bindsym $Mod+Shift+$down  move down  20px
-bindsym $Mod+Shift+$up    move up    20px
-bindsym $Mod+Shift+$right move right 20px
+bindsym $Mod+Shift+$left  move left  40px
+bindsym $Mod+Shift+$down  move down  40px
+bindsym $Mod+Shift+$up    move up    40px
+bindsym $Mod+Shift+$right move right 40px
 # Mod + Mouse
 floating_modifier $Mod
 
