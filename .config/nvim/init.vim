@@ -10,35 +10,45 @@
 " Load vim-plug for plugins
 call plug#begin('~/.config/nvim/bundle')
 
-	Plug 'https://github.com/ambv/black'
+	Plug 'https://github.com/w0rp/ale'
+	Plug 'https://github.com/captbaritone/better-indent-support-for-php-with-html'
 	Plug 'https://github.com/Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 		Plug 'https://github.com/Shougo/deoplete-clangx'
+		Plug 'https://github.com/deoplete-plugins/deoplete-go', { 'do': 'go get -u github.com/stamblerre/gocode && make'}
 		Plug 'https://github.com/deoplete-plugins/deoplete-jedi'
+		Plug 'https://github.com/padawan-php/deoplete-padawan', { 'do': 'composer install' }
 		Plug 'https://github.com/carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
 		Plug 'https://github.com/deoplete-plugins/deoplete-zsh'
 		Plug 'https://github.com/Shougo/neco-vim'
 		Plug 'https://github.com/Shougo/neoinclude.vim'
+	Plug 'https://github.com/editorconfig/editorconfig-vim'
 	Plug 'https://github.com/junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 		Plug 'https://github.com/junegunn/fzf.vim'
 	Plug 'https://github.com/junegunn/goyo.vim'
 	Plug '~/.config/nvim/bundle/i3-vim-syntax'
 	Plug 'https://github.com/itchyny/lightline.vim'
 		Plug '~/.config/nvim/bundle/lightline-biual'
-	Plug 'https://github.com/rafaqz/ranger.vim'
 	Plug 'https://github.com/vim-python/python-syntax'
+	Plug 'https://github.com/rafaqz/ranger.vim'
+	Plug 'https://github.com/cakebaker/scss-syntax.vim'
+	Plug 'https://github.com/SirVer/ultisnips'
+		Plug 'https://github.com/honza/vim-snippets'
 	Plug 'https://github.com/romainl/vim-cool'
 	Plug 'https://github.com/tpope/vim-commentary'
+	Plug 'https://github.com/bfrg/vim-cpp-modern'
 	Plug 'https://github.com/tpope/vim-fugitive'
 		Plug 'https://github.com/shumphrey/fugitive-gitlab.vim'
 		Plug 'https://github.com/tpope/vim-rhubarb'
-	Plug 'https://github.com/bfrg/vim-cpp-modern'
 	Plug 'https://github.com/itchyny/vim-gitbranch'
+	Plug 'https://github.com/fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 	Plug 'https://github.com/jelera/vim-javascript-syntax'
+	Plug 'https://github.com/matze/vim-meson'
 	Plug 'https://github.com/tpope/vim-surround'
 	Plug 'https://github.com/tpope/vim-repeat'
 	Plug 'https://github.com/reedes/vim-pencil'
 	Plug 'https://github.com/tpope/vim-speeddating'
 	Plug 'https://github.com/cespare/vim-toml'
+	Plug 'https://github.com/bronson/vim-trailing-whitespace'
 
 call plug#end()
 
@@ -58,7 +68,7 @@ set bg=light
 
 " Colorscheme
 hi LineNr           ctermfg=3
-hi CursorLineNr     ctermfg=11
+hi CursorLineNr     ctermfg=3
 hi Statement        ctermfg=3
 hi Visual                       ctermbg=8
 hi Search                       ctermbg=8
@@ -74,11 +84,24 @@ hi DiffChange       ctermbg=4   ctermfg=0
 hi DiffDelete       ctermbg=1   ctermfg=0
 hi Folded           ctermbg=8
 hi FoldColumn       ctermbg=8
+hi SignColumn       ctermbg=0   ctermfg=7
+hi ALEWarning       ctermbg=1   ctermfg=0
+hi ALEErrorSign     ctermbg=1   ctermfg=0
 
-" Syntax highlighting
-let g:python_highlight_all = 1
+" Disable changing cursor to line
+set guicursor=
+autocmd OptionSet guicursor noautocmd set guicursor=
 
-" Lightline
+" Python paths, needed for virtualenvs
+let g:python3_host_prog = '/usr/bin/python3'
+let g:python_host_prog = '/usr/bin/python2'
+
+
+"================
+" Plugin configs
+"================
+
+" Lightline - statusline
 set noshowmode
 let g:lightline = {
 	\ 'colorscheme': 'biual',
@@ -94,9 +117,69 @@ let g:lightline = {
 	\ },
 	\ }
 
-" Disable changing cursor to line
-set guicursor=
-autocmd OptionSet guicursor noautocmd set guicursor=
+" Deoplete - autocompletion
+let g:deoplete#enable_at_startup = 1
+if !exists('g:deoplete#omni#input_patterns')
+  let g:deoplete#omni#input_patterns = {}
+endif
+" deoplete-go
+let g:deoplete#sources#go#gocode_binary = $GOPATH.'/bin/gocode'
+" UltiSnips
+call deoplete#custom#source('ultisnips', 'rank', 1000)
+
+" ALE - Asynchronous Lint Engine
+let g:ale_linters = {
+\   'c': ['clang'],
+\   'cpp': ['clang'],
+\   'css': ['prettier'],
+\   'javascript': ['prettier'],
+\   'html': ['prettier'],
+\   'scss': ['prettier'],
+\   'php': ['php'],
+\   'python': ['flake8'],
+\}
+let g:ale_fixers = {
+\   'c': ['clang-format'],
+\   'cpp': ['clang-format'],
+\   'css': ['prettier'],
+\   'go': ['gofmt'],
+\   'html': ['prettier'],
+\   'javascript': ['prettier'],
+\   'json': ['prettier'],
+\   'php': ['prettier'],
+\   'python': ['black'],
+\   'scss': ['prettier'],
+\}
+let g:ale_lint_on_text_changed = 'never'
+
+" vim-go
+let g:go_fmt_autosave = 0 "We use ALE for formatting
+
+" Syntax highlighting
+let g:python_highlight_all = 1
+
+" vim-plug - plugin manager
+" Fix https://github.com/junegunn/vim-plug/issues/502
+let g:plug_threads = 1
+
+
+"===================
+" Language-specific
+"===================
+
+autocmd Filetype c setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+autocmd Filetype cpp setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+autocmd Filetype css setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+autocmd Filetype javascript setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+autocmd Filetype html setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+autocmd Filetype json setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+autocmd Filetype scss setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+autocmd Filetype php setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+
+
+"==============
+" Key Bindings
+"==============
 
 " Remove endline
 map <S-u> :s/\n/ <CR>
@@ -112,13 +195,6 @@ map <S-k> :tabprev<CR>
 " Man pages!
 map <C-S-?> :Man<CR>
 
-" Deoplete, autocompletion
-let g:deoplete#enable_at_startup = 1
-if !exists('g:deoplete#omni#input_patterns')
-  let g:deoplete#omni#input_patterns = {}
-endif
-set completeopt-=preview
-
 " Complete with <TAB>
 inoremap <silent><expr> <TAB> pumvisible() ? "\<C-n>" :
 \ <SID>check_back_space() ? "\<TAB>" :
@@ -131,8 +207,8 @@ endfunction"}}}
 " Open Ranger, file manager
 map <C-\> :RangerEdit<CR>
 
-" Black, Python code formatter
-map <C-b> :Black<CR>
+" ALE Formatter
+map <C-b> :ALEFix<CR>
 
 " Spell-check (English US and Polish)
 map <F6> :setlocal spell! spelllang=en_us<CR>
@@ -153,10 +229,7 @@ let g:fzf_action = {
   \ 'ctrl-x': 'split',
   \ 'ctrl-v': 'vsplit' }
 
-
-" Python paths, needed for virtualenvs
-let g:python3_host_prog = '/usr/bin/python3'
-let g:python_host_prog = '/usr/bin/python2'
-
-" Fix https://github.com/junegunn/vim-plug/issues/502
-let g:plug_threads = 1
+" UltiSnips
+let g:UltiSnipsExpandTrigger="<c-a>"
+let g:UltiSnipsJumpForwardTrigger="<c-f>"
+let g:UltiSnipsJumpBackwardTrigger="<c-x>"
