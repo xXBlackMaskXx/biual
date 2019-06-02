@@ -161,7 +161,7 @@ bindsym $Mod+Return exec $TERMINAL
 bindsym $Mod+f exec GTK_THEME=Adwaita-dark $HOME/.local/share/torbrowser/Browser/start-tor-browser
 bindsym $Mod+Shift+f exec $BROWSER
 bindsym $Mod+r exec --no-startup-id $TERMINAL -n 'ncmpcpp' -e 'ncmpcpp'
-bindsym $Mod+t exec Telegram
+bindsym $Mod+t exec $HOME/.script/dmenu-messenger.sh
 bindsym $Mod+b exec blueman-manager
 bindsym $Mod+p [instance="keepassxc-sp"] scratchpad show; [instance="keepassxc-sp"] move position center
 bindsym $Mod+u exec --no-startup-id exec ~/.script/dmenu-unicode.sh
