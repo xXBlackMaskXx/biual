@@ -34,6 +34,7 @@ alias please='sudo $(fc -ln -1)'
 alias woman='man'
 alias sudo='sudo '
 alias doas='doas '
+alias torsocks='torsocks '
 
 # cURL aliases
 alias wttr='curl wttr.in'
