@@ -131,6 +131,9 @@ exec --no-startup-id /usr/libexec/polkit-gnome-authentication-agent-1
 # Wallpaper (don't edit directly there, use ~/.script/wallpaper.sh)
 exec --no-startup-id xwallpaper --daemon --zoom ~/.config/wallpaper
 
+# Syncthing
+exec --no-startup-id syncthing -no-browser
+
 # Scratchpad
 exec --no-startup-id keepassxc -name keepassxc-sp
 
