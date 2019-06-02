@@ -18,4 +18,4 @@
 	url = https://gitlab.com/dawidpotocki/biualfox.git
 [submodule ".local/share/tor-browser"]
 	path = .local/share/tor-browser
-	url = https://gitlab.com/dawidpotocki/torbrowser-biual
+	url = https://gitlab.com/dawidpotocki/torbrowser-biual.git
