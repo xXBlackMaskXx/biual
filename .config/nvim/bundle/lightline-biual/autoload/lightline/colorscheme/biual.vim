@@ -1,20 +1,20 @@
 " Color Scheme  [ '#rrggbb', Xresources number]
-let s:black =   [ '#0a0a30', 0 ]
-let s:red =     [ '#aa2f46', 1 ]
-let s:green =   [ '#2a9361', 2 ]
-let s:yellow =  [ '#a0782e', 3 ]
-let s:blue =    [ '#226ebf', 4 ]
-let s:magenta = [ '#aa2f83', 5 ]
-let s:cyan =    [ '#2a9392', 6 ]
-let s:white =   [ '#9b9cb5', 7 ]
-let s:darkgrey =[ '#10105b', 8 ]
+let s:black =   [ '#181b21', 0 ]
+let s:red =     [ '#b54848', 1 ]
+let s:green =   [ '#7c933f', 2 ]
+let s:yellow =  [ '#af774f', 3 ]
+let s:blue =    [ '#5f819d', 4 ]
+let s:magenta = [ '#915b8d', 5 ]
+let s:cyan =    [ '#5e8d87', 6 ]
+let s:white =   [ '#aaaaaa', 7 ]
+let s:darkgrey =[ '#22262e', 8 ]
 
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
 
 " Airline have something like boxes, where you put plugins. So you have to
 " change colors for all boxes individually. If you don't want to, you don't have
 " to set different colors for different Vim modes, you can just comment them out.
-" 
+"
 " Syntax:
 " let s:p.mode.position    [[ s:foreground, s:background ], [ s:foreground, s:background ]]
 
@@ -37,7 +37,7 @@ let s:p.normal.warning =   [[ s:black, s:yellow ]]
 
 " Replace
 "let s:p.replace.left =     [[ s:blue, s:darkgrey ], [ s:blue, s:black ], [ s:blue, s:black ]]
-"let s:p.replace.middle =   [[ s:blue, s:black ],    [ s:blue, s:black ], [ s:blue, s:black ]] 
+"let s:p.replace.middle =   [[ s:blue, s:black ],    [ s:blue, s:black ], [ s:blue, s:black ]]
 "let s:p.replace.right =    [[ s:blue, s:darkgrey ], [ s:blue, s:black ], [ s:blue, s:black ]]
 
 " Visual
