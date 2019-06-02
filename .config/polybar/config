@@ -55,7 +55,7 @@ monitor-strict = false
 
 modules-left   = i3
 modules-center =
-modules-right  = wireless-network | battery | volume simple_mpd clock
+modules-right  = wireless-network | wired-network | battery | volume simple_mpd clock
 
 ;tray-position = right
 ;tray-padding = 2
@@ -76,7 +76,7 @@ font-2 = "Font Awesome 5 Free:style=Solid:pixelsize=12:antialias=true;3"
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-fixed-center = true
+fixed-center = false
 module-margin = 0
 padding-right = 2
 padding-left = 1
@@ -342,10 +342,11 @@ animation-packetloss-framerate = 500
 ;~~~~~~~~~~~~~~~~~~~~~~~~~~
 [module/wired-network]
 type = internal/network
-interface =
+interface = ${env:WIRED}
 format-connected = <label-connected>
 format-disconnected = <label-disconnected>
 label-connected =  %local_ip%
+label-disconnected =  disconnected
 format-connected-foreground = ${colors.foreground}
 
 
