@@ -158,7 +158,7 @@ bindsym $Mod+Shift+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -f -i"
 
 # Applications
 bindsym $Mod+Return exec $TERMINAL
-bindsym $Mod+f exec GTK_THEME=Adwaita-dark $HOME/.local/share/torbrowser/Browser/start-tor-browser
+bindsym $Mod+f exec GTK_THEME=Adwaita-dark $HOME/.local/share/tor-browser/Browser/start-tor-browser
 bindsym $Mod+Shift+f exec $BROWSER
 bindsym $Mod+r exec --no-startup-id $TERMINAL -n 'ncmpcpp' -e 'ncmpcpp'
 bindsym $Mod+t exec $HOME/.script/dmenu-messenger.sh

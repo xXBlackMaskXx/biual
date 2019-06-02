@@ -19,6 +19,6 @@
 [submodule ".mozilla/firefox"]
 	path = .mozilla/firefox
 	url = https://gitlab.com/dawidpotocki/biualfox.git
-[submodule ".local/share/torbrowser"]
-	path = .local/share/torbrowser
+[submodule ".local/share/tor-browser"]
+	path = .local/share/tor-browser
 	url = https://gitlab.com/dawidpotocki/torbrowser-biual
