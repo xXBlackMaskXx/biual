@@ -1,19 +1,19 @@
 #
-#   _ _____                             
-#  (_)___ /        __ _  __ _ _ __  ___ 
+#   _ _____
+#  (_)___ /        __ _  __ _ _ __  ___
 #  | | |_ \ _____ / _` |/ _` | '_ \/ __|
 #  | |___) |_____| (_| | (_| | |_) \__ \
 #  |_|____/       \__, |\__,_| .__/|___/
-#                 |___/      |_|  
+#                 |___/      |_|
 #
 
 
-# Xresources      var		value
+# Xresources      var         value
 set_from_resource $bg         background
 set_from_resource $fg         foreground
 set_from_resource $black      color0
-set_from_resource $black_l    color8 
-set_from_resource $red        color1 
+set_from_resource $black_l    color8
+set_from_resource $red        color1
 set_from_resource $red_l      color9
 set_from_resource $green      color2
 set_from_resource $green_l    color10
@@ -95,7 +95,7 @@ bindsym $Mod+minus gaps inner all minus 5
 # ~~~~~~~~~~~
 
 # Remap buttons + keyboard layout
-exec --no-startup-id setxkbmap pl -option 'caps:ctrl_modifier'  
+exec --no-startup-id setxkbmap pl -option 'caps:ctrl_modifier'
 exec --no-startup-id xcape -e 'Caps_Lock=Escape'
 
 # Load .Xresources configs
@@ -117,7 +117,7 @@ exec --no-startup-id compton
 exec --no-startup-id dunst
 
 # Music daemon
-exec --no-startup-id mpd 
+exec --no-startup-id mpd
 
 # If you have a numpad you may want to enable this and install numlockx
 #exec --no-startup-id numlockx
@@ -142,7 +142,7 @@ exec --no-startup-id keepassxc -name keepassxc-sp
 #  Keybindings
 # ~~~~~~~~~~~~~
 
-# Restart i3 
+# Restart i3
 bindsym $Mod+Shift+r restart
 
 # Kill focused window
@@ -175,7 +175,7 @@ bindsym $Mod+g exec --no-startup-id gcolor2
 bindsym $Mod+c exec --no-startup-id compton
 bindsym $Mod+Shift+c exec --no-startup-id killall -9 compton
 
-# Logout 
+# Logout
 bindsym $Mod+x exec --no-startup-id ~/.script/dmenu-logout.sh
 
 # Screenshot
@@ -251,7 +251,7 @@ bindsym $Mod+Shift+space floating toggle
 # Change focus on mouse click
 focus_follows_mouse no
 
-# Change focus					
+# Change focus
 bindsym $Moe+$left  focus left
 bindsym $Moe+$down  focus down
 bindsym $Moe+$up    focus up
