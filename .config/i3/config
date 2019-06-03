@@ -314,10 +314,10 @@ default_orientation horizontal
 #  Application Settings
 # ~~~~~~~~~~~~~~~~~~~~~~
 
-# Clearnet Browsers (WS0)
-assign [class="qutebrowser"] workspace $ws0
-assign [class="Firefox"] workspace $ws0
-assign [class="Chromium"] workspace $ws0
+# Clearnet Browsers (WS11)
+assign [class="qutebrowser"] workspace $ws11
+assign [class="Firefox"] workspace $ws11
+assign [class="Chromium"] workspace $ws11
 
 # Tor Browser (WS1)
 assign [class="Tor Browser"] workspace $ws1
