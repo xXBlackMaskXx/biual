@@ -236,6 +236,18 @@ bindsym $Mod+$up workspace prev
 bindsym $Mod+Tab workspace back_and_forth
 
 # Move focused container to Workspace
+bindsym $Mod+Ctrl+asciitilde move container to workspace $ws0
+bindsym $Mod+Ctrl+1 move container to workspace $ws1
+bindsym $Mod+Ctrl+2 move container to workspace $ws2
+bindsym $Mod+Ctrl+3 move container to workspace $ws3
+bindsym $Mod+Ctrl+4 move container to workspace $ws4
+bindsym $Mod+Ctrl+5 move container to workspace $ws5
+bindsym $Mod+Ctrl+6 move container to workspace $ws6
+bindsym $Mod+Ctrl+7 move container to workspace $ws7
+bindsym $Mod+Ctrl+8 move container to workspace $ws8
+bindsym $Mod+Ctrl+9 move container to workspace $ws9
+bindsym $Mod+Ctrl+0 move container to workspace $ws10
+bindsym $Mod+Shift+asciitilde move container to workspace $ws0; workspace $ws0
 bindsym $Mod+Shift+1 move container to workspace $ws1; workspace $ws1
 bindsym $Mod+Shift+2 move container to workspace $ws2; workspace $ws2
 bindsym $Mod+Shift+3 move container to workspace $ws3; workspace $ws3
