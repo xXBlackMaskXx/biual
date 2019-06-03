@@ -52,6 +52,7 @@ set $left h
 set $right l
 
 # Workspaces Icons
+set $ws0 "0: "
 set $ws1 "1: "
 set $ws2 "2: "
 set $ws3 "3: "
@@ -215,6 +216,7 @@ bindsym F11 fullscreen
 # ~~~~~~~~~~~~~~~~~~~~
 
 # Switch to Workspace
+bindsym $Mod+grave workspace $ws0
 bindsym $Mod+1 workspace $ws1
 bindsym $Mod+2 workspace $ws2
 bindsym $Mod+3 workspace $ws3
@@ -300,12 +302,14 @@ default_orientation horizontal
 #  Application Settings
 # ~~~~~~~~~~~~~~~~~~~~~~
 
-# Browsers (WS1)
-assign [class="qutebrowser"] workspace $ws1
-assign [class="Firefox"] workspace $ws1
+# Clearnet Browsers (WS0)
+assign [class="qutebrowser"] workspace $ws0
+assign [class="Firefox"] workspace $ws0
+assign [class="Chromium"] workspace $ws0
+
+# Tor Browser (WS1)
 assign [class="Tor Browser"] workspace $ws1
 for_window [class="Tor Browser"] floating enable
-for_window [class="Tor Browser"] move position center
 
 # Coding (WS2)
 assign [class="Code - OSS"] workspace $ws2
