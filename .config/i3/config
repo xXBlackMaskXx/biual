@@ -330,6 +330,7 @@ assign [class="Code - OSS"] workspace $ws2
 assign [class="TelegramDesktop"] workspace $ws4
 assign [class="Riot"] workspace $ws4
 assign [class="Signal"] workspace $ws4
+assign [class="Wire"] workspace $ws4
 
 # Mail (WS5)
 assign [instance="neomutt"] workspace $ws5
