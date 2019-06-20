@@ -182,8 +182,17 @@ autocmd Filetype php setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 " Key Bindings
 "==============
 
+" Leader key
+let mapleader = ' '
+
 " Remove endline
 map <S-u> :s/\n/ <CR>
+
+" gv reselects last selection
+" so now you can indent with >>>>…
+" without selecting again
+xnoremap < <gv
+xnoremap > >gv
 
 " Tab Managment
 map <C-o> :tabnew<CR>
@@ -219,8 +228,7 @@ map <F7> :setlocal spell! spelllang=pl<CR>
 map <F8> :Goyo<CR>
 
 " Toggle Pencil, wrapping text
-map <F9> :PencilSoft<CR>
-map <F10> :PencilHard<CR>
+map <F9> :PencilToggle<CR>
 
 " fzf, fuzzy finder
 nnoremap <C-p> :Files<CR>
