@@ -64,6 +64,7 @@ set tabstop=4
 set shiftwidth=4
 set ignorecase
 set smartcase
+set undofile
 set bg=light
 
 " Colorscheme
