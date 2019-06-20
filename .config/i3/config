@@ -86,10 +86,6 @@ popup_during_fullscreen smart
 bindsym $Mod+o border pixel 2
 bindsym $Mod+Shift+o border none
 
-# Change Gaps size
-bindsym $Mod+equal gaps inner all plus  5
-bindsym $Mod+minus gaps inner all minus 5
-
 
 # ~~~~~~~~~~~
 #  Autostart
@@ -226,7 +222,7 @@ bindsym $Mod+7 workspace $ws7
 bindsym $Mod+8 workspace $ws8
 bindsym $Mod+9 workspace $ws9
 bindsym $Mod+0 workspace $ws10
-bindsym $Mod+grave workspace $ws11
+bindsym $Mod+minus workspace $ws11
 
 # Next/Previous Workspace
 bindsym $Mod+$down workspace next
@@ -246,7 +242,7 @@ bindsym $Mod+Ctrl+7 move container to workspace $ws7
 bindsym $Mod+Ctrl+8 move container to workspace $ws8
 bindsym $Mod+Ctrl+9 move container to workspace $ws9
 bindsym $Mod+Ctrl+0 move container to workspace $ws10
-bindsym $Mod+Ctrl+asciitilde move container to workspace $ws11
+bindsym $Mod+Ctrl+underscore move container to workspace $ws11
 bindsym $Mod+Shift+1 move container to workspace $ws1; workspace $ws1
 bindsym $Mod+Shift+2 move container to workspace $ws2; workspace $ws2
 bindsym $Mod+Shift+3 move container to workspace $ws3; workspace $ws3
@@ -257,7 +253,7 @@ bindsym $Mod+Shift+7 move container to workspace $ws7; workspace $ws7
 bindsym $Mod+Shift+8 move container to workspace $ws8; workspace $ws8
 bindsym $Mod+Shift+9 move container to workspace $ws9; workspace $ws9
 bindsym $Mod+Shift+0 move container to workspace $ws10; workspace $ws10
-bindsym $Mod+Shift+asciitilde move container to workspace $ws11; workspace $ws11
+bindsym $Mod+Shift+underscore move container to workspace $ws11; workspace $ws11
 
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~
