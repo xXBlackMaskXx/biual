@@ -94,6 +94,7 @@ bindsym $Mod+Shift+o border none
 # Remap buttons + keyboard layout
 exec --no-startup-id setxkbmap pl -option 'caps:ctrl_modifier'
 exec --no-startup-id xcape -e 'Caps_Lock=Escape'
+exec --no-startup-id xmodmap -e "keysym Menu = Super_R"
 
 # Load .Xresources configs
 exec_always --no-startup-id xrdb -load ~/.Xresources
