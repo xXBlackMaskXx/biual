@@ -151,6 +151,7 @@ let g:ale_fixers = {
 \   'php': ['prettier'],
 \   'python': ['black'],
 \   'scss': ['prettier'],
+\   'yaml': ['prettier'],
 \}
 let g:ale_lint_on_text_changed = 'never'
 
@@ -177,6 +178,12 @@ autocmd Filetype html setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 autocmd Filetype json setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 autocmd Filetype scss setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 autocmd Filetype php setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+autocmd Filetype yaml setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+augroup pencil
+  autocmd!
+  autocmd FileType markdown call pencil#init({'wrap': 'soft', 'autoformat': 1})
+  autocmd FileType tex call pencil#init({'wrap': 'soft', 'autoformat': 1})
+augroup END
 
 
 "==============
