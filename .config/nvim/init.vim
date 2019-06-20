@@ -165,6 +165,10 @@ let g:python_highlight_all = 1
 " Fix https://github.com/junegunn/vim-plug/issues/502
 let g:plug_threads = 1
 
+" vim-pencil
+let g:pencil#textwidth = 88
+let g:pencil#wrapModeDefault = 'soft'
+
 
 "===================
 " Language-specific
