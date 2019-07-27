@@ -58,7 +58,7 @@ syntax on
 filetype plugin indent on
 set autoindent
 set smarttab
-set nu relativenumber
+set number relativenumber
 set clipboard=unnamedplus
 set inccommand=nosplit
 set tabstop=4
@@ -66,7 +66,7 @@ set shiftwidth=4
 set ignorecase
 set smartcase
 set undofile
-set bg=light
+set background=light
 
 " Colorscheme
 hi LineNr           ctermfg=3
@@ -174,15 +174,18 @@ let g:pencil#wrapModeDefault = 'soft'
 " Language-specific
 "===================
 
-autocmd Filetype c setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
-autocmd Filetype cpp setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
-autocmd Filetype css setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
-autocmd Filetype javascript setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
-autocmd Filetype html setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
-autocmd Filetype json setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
-autocmd Filetype scss setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
-autocmd Filetype php setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
-autocmd Filetype yaml setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+augroup langindentation
+	autocmd Filetype c setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+	autocmd Filetype cpp setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+	autocmd Filetype css setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+	autocmd Filetype javascript setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+	autocmd Filetype html setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+	autocmd Filetype json setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+	autocmd Filetype scss setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+	autocmd Filetype php setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+	autocmd Filetype yaml setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+augroup END
+
 augroup pencil
   autocmd!
   autocmd FileType markdown call pencil#init({'wrap': 'soft', 'autoformat': 1})
@@ -223,7 +226,7 @@ inoremap <silent><expr> <TAB> pumvisible() ? "\<C-n>" :
 \ deoplete#mappings#manual_complete()
 function! s:check_back_space() abort "{{{
   let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~ '\s'
+  return !col || getline('.')[col - 1]  =~? '\s'
 endfunction"}}}
 
 " Open Ranger, file manager
@@ -251,6 +254,10 @@ let g:fzf_action = {
   \ 'ctrl-v': 'vsplit' }
 
 " UltiSnips
-let g:UltiSnipsExpandTrigger="<c-a>"
-let g:UltiSnipsJumpForwardTrigger="<c-f>"
-let g:UltiSnipsJumpBackwardTrigger="<c-x>"
+let g:UltiSnipsExpandTrigger='<c-a>'
+let g:UltiSnipsJumpForwardTrigger='<c-s>'
+let g:UltiSnipsJumpBackwardTrigger='<c-q>'
+
+
+"==Encoding==
+scriptencoding utf-8
