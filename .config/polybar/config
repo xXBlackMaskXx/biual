@@ -55,7 +55,7 @@ monitor-strict = false
 
 modules-left   = i3
 modules-center =
-modules-right  = wireless-network | wired-network | battery | volume simple_mpd clock
+modules-right  = wireless-network | wired-network | battery | pulseaudio simple_mpd clock
 
 ;tray-position = right
 ;tray-padding = 2
@@ -191,10 +191,20 @@ label-warn-padding = 1
 label-warn-foreground = ${colors.urgent}
 
 
-;~~~~~~~~~~~~~~~~
-; Volume / Audio
-;~~~~~~~~~~~~~~~~
-[module/volume]
+;~~~~~~~
+; sndio
+;~~~~~~~
+[module/sndio]
+type = custom/script
+
+interval = 2
+exec = ~/.script/polybar-sndio.sh
+
+
+;~~~~~~~~~~~~
+; PulseAudio
+;~~~~~~~~~~~~
+[module/pulseaudio]
 type = internal/pulseaudio
 use-ui-max = true
 
