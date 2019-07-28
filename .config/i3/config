@@ -311,11 +311,6 @@ default_orientation horizontal
 #  Application Settings
 # ~~~~~~~~~~~~~~~~~~~~~~
 
-# Clearnet Browsers (WS11)
-assign [class="qutebrowser"] workspace $ws11
-assign [class="Firefox"] workspace $ws11
-assign [class="Chromium"] workspace $ws11
-
 # Tor Browser (WS1)
 assign [class="Tor Browser"] workspace $ws1
 for_window [class="Tor Browser"] floating enable
@@ -351,6 +346,14 @@ assign [instance="ncmpcpp"] workspace $ws9
 # Video (WS10)
 assign [class="obs"] workspace $ws10
 assign [class="vlc"] workspace $ws10
+
+# Clearnet Browsers (WS11)
+assign [class="qutebrowser"] workspace $ws11
+assign [class="Firefox"] workspace $ws11
+assign [class="Chromium"] workspace $ws11
+assign [class="Epiphany"] workspace $ws11
+assign [class="Falkon"] workspace $ws11
+assign [class="Midori"] workspace $ws11
 
 # Scratchpad
 for_window [instance="keepassxc-sp"] move scratchpad
