@@ -10,6 +10,10 @@
 # Source private/sensitive configs
 source ~/.privaterc &> /dev/null
 
+# Disable Ctrl-s Ctrl-q
+stty stop undef
+stty start undef
+
 # Less pager colors
 export LESS_TERMCAP_mb=$(tput setaf 4)
 export LESS_TERMCAP_md=$(tput setaf 4)
@@ -34,6 +38,7 @@ alias please='sudo $(fc -ln -1)'
 alias woman='man'
 alias sudo='sudo '
 alias doas='doas '
+alias t='torsocks '
 alias torsocks='torsocks '
 
 # cURL aliases
