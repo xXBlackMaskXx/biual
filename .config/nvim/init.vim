@@ -10,7 +10,7 @@
 " Load vim-plug for plugins
 call plug#begin('~/.config/nvim/bundle')
 
-	Plug 'https://github.com/w0rp/ale'
+	Plug 'https://github.com/w0rp/ale', { 'do': 'pipx install python-language-server && yarn global add prettier @prettier/plugin-php' }
 	Plug 'https://github.com/captbaritone/better-indent-support-for-php-with-html'
 	Plug 'https://github.com/Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 		Plug 'https://github.com/Shougo/deoplete-clangx'
@@ -131,16 +131,15 @@ call deoplete#custom#source('ultisnips', 'rank', 1000)
 
 " ALE - Asynchronous Lint Engine
 let g:ale_linters = {
-\   'c': ['clang'],
+\   'c': ['ccls', 'clang'],
 \   'cpp': ['clang'],
-\   'css': ['prettier'],
-\   'javascript': ['prettier'],
-\   'html': ['prettier'],
-\   'scss': ['prettier'],
+\   'javascript': ['eslint'],
 \   'php': ['php'],
-\   'python': ['flake8'],
+\   'python': ['pyls', 'flake8'],
+\   'vim': ['vint'],
 \}
 let g:ale_fixers = {
+\   '*': ['trim_whitespace'],
 \   'c': ['clang-format'],
 \   'cpp': ['clang-format'],
 \   'css': ['prettier'],
@@ -153,7 +152,7 @@ let g:ale_fixers = {
 \   'scss': ['prettier'],
 \   'yaml': ['prettier'],
 \}
-let g:ale_lint_on_text_changed = 'never'
+" let g:ale_lint_on_text_changed = 'never'
 
 " vim-go
 let g:go_fmt_autosave = 0 "We use ALE for formatting
@@ -232,8 +231,10 @@ endfunction"}}}
 " Open Ranger, file manager
 map <C-\> :RangerEdit<CR>
 
-" ALE Formatter
+" ALE - Asynchronous Lint Engine
 map <C-b> :ALEFix<CR>
+map <Leader>g :ALEGoToDefinitionInSplit<CR>
+map <Leader>G :ALEGoToDefinition<CR>
 
 " Spell-check (English US and Polish)
 map <F6> :setlocal spell! spelllang=en_us<CR>
