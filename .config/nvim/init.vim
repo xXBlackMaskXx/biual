@@ -186,9 +186,9 @@ augroup langindentation
 augroup END
 
 augroup pencil
-  autocmd!
-  autocmd FileType markdown call pencil#init({'wrap': 'soft', 'autoformat': 1})
-  autocmd FileType tex call pencil#init({'wrap': 'soft', 'autoformat': 1})
+	autocmd!
+	autocmd FileType markdown call pencil#init({'wrap': 'soft', 'autoformat': 1})
+	autocmd FileType tex call pencil#init({'wrap': 'soft', 'autoformat': 1})
 augroup END
 
 
