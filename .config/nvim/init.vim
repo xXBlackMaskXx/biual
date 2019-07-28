@@ -199,8 +199,10 @@ augroup END
 " Leader key
 let mapleader = ' '
 
-" Remove endline
-map <S-u> :s/\n/ <CR>
+" When line overflows, it will go
+" one _visual_ line and not actual
+map j gj
+map k gk
 
 " gv reselects last selection
 " so now you can indent with >>>>…
