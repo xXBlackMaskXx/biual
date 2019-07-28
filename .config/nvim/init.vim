@@ -213,13 +213,8 @@ xnoremap > >gv
 " Tab Managment
 map <C-o> :tabnew<CR>
 map <C-c> :tabclose<CR>
-map <C-h> :tabprev<CR>
-map <C-l> :tabnext<CR>
-map <S-j> :tabnext<CR>
-map <S-k> :tabprev<CR>
-
-" Man pages!
-map <C-S-?> :Man<CR>
+nnoremap <Leader>k gT
+nnoremap <Leader>j gt
 
 " Complete with <TAB>
 inoremap <silent><expr> <TAB> pumvisible() ? "\<C-n>" :
