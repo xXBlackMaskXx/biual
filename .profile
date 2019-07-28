@@ -2,8 +2,9 @@
 
 export NPM_PACKAGES="$HOME/.local/share/npm-packages"
 export NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
-export PATH="$PATH:$HOME/.local/bin:$NPM_PACKAGES/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.cargo/bin:${GOPATH//://bin:}/bin:$HOME/.config/composer/vendor/bin"
+export PATH="$PATH:$HOME/.local/bin:$NPM_PACKAGES/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.cargo/bin:${GOPATH//://bin:}/bin:$HOME/.config/composer/vendor/bin:$HOME/.local/share/gems/bin"
 export GOPATH="$HOME/.local/share/go"
+export GEM_HOME="$HOME/.local/share/gems"
 export PIPX_HOME="$HOME/.local/share/pipx"
 export XDG_CONFIG_HOME="$HOME/.config"
 export QT_QPA_PLATFORMTHEME=gtk2
