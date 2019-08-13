@@ -13,9 +13,6 @@
 [submodule ".local/share/sxiv"]
 	path = .local/share/sxiv
 	url = https://gitlab.com/dawidpotocki/sxiv.git
-[submodule ".mozilla/firefox"]
-	path = .mozilla/firefox
-	url = https://gitlab.com/dawidpotocki/biualfox.git
 [submodule ".local/share/tor-browser"]
 	path = .local/share/tor-browser
 	url = https://gitlab.com/dawidpotocki/torbrowser-biual.git
