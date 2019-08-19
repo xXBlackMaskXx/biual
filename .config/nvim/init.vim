@@ -10,14 +10,14 @@
 " Load vim-plug for plugins
 call plug#begin('~/.config/nvim/bundle')
 
-	Plug 'https://github.com/w0rp/ale', { 'do': 'pipx install python-language-server && yarn global add prettier @prettier/plugin-php' }
+	Plug 'https://github.com/w0rp/ale'
 	Plug 'https://github.com/captbaritone/better-indent-support-for-php-with-html'
 	Plug 'https://github.com/Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 		Plug 'https://github.com/Shougo/deoplete-clangx'
-		Plug 'https://github.com/deoplete-plugins/deoplete-go', { 'do': 'go get -u github.com/stamblerre/gocode && make'}
+		Plug 'https://github.com/deoplete-plugins/deoplete-go', { 'do': 'make'}
 		Plug 'https://github.com/deoplete-plugins/deoplete-jedi'
 		Plug 'https://github.com/padawan-php/deoplete-padawan', { 'do': 'composer install' }
-		Plug 'https://github.com/carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
+		Plug 'https://github.com/carlitux/deoplete-ternjs'
 		Plug 'https://github.com/deoplete-plugins/deoplete-zsh'
 		Plug 'https://github.com/Shougo/neco-vim'
 		Plug 'https://github.com/Shougo/neoinclude.vim'
