@@ -1,71 +1,69 @@
 #
-#               _       _                                     
-#    __ _ _   _| |_ ___| |__  _ __ _____      _____  ___ _ __ 
+#               _       _
+#    __ _ _   _| |_ ___| |__  _ __ _____      _____  ___ _ __
 #   / _` | | | | __/ _ \ '_ \| '__/ _ \ \ /\ / / __|/ _ \ '__|
-#  | (_| | |_| | ||  __/ |_) | | | (_) \ V  V /\__ \  __/ |   
-#   \__, |\__,_|\__\___|_.__/|_|  \___/ \_/\_/ |___/\___|_|   
-#      |_|   
+#  | (_| | |_| | ||  __/ |_) | | | (_) \ V  V /\__ \  __/ |
+#   \__, |\__,_|\__\___|_.__/|_|  \___/ \_/\_/ |___/\___|_|
+#      |_|
 #
 
 
 # Uncomment this to still load settings configured via autoconfig.yml
-#config.load_autoconfig()
+# config.load_autoconfig()
 
 # Set custom User Agent
-#config.set('content.headers.user_agent', 'Mozilla/5.0 (Windows NT 6.1; rv:52.0) Gecko/20100101 Firefox/52.0')
+# config.set('content.headers.user_agent', 'Mozilla/5.0 (Windows NT 6.1; rv:52.0) Gecko/20100101 Firefox/52.0')
 
 # Enable Javascript
-config.set('content.javascript.enabled', True, 'file://*')
-config.set('content.javascript.enabled', True, 'chrome://*/*')
-config.set('content.javascript.enabled', True, 'qute://*/*')
+config.set("content.javascript.enabled", True, "file://*")
+config.set("content.javascript.enabled", True, "chrome://*/*")
+config.set("content.javascript.enabled", True, "qute://*/*")
 
 # Custom Adblock list file
-#c.content.host_blocking.lists.append( str(config.configdir) + "/blockedHosts")
+# c.content.host_blocking.lists.append( str(config.configdir) + "/blockedHosts")
 
 # Custom CSS
-c.content.user_stylesheets = [
-    'css/main.css',
-]
+# c.content.user_stylesheets = ["css/main.css"]
 
 # Change start/default pages + search engine
-config.set('url.start_pages', 'https://start.duckduckgo.com/?kae=d&k5=2&kp=-2&kaj=m&kao=-1&kav=1&kaq=-1&kam=osm&kap=-1&kak=-1&kax=-1&kay=b&kw=n&ks=n&ko=1&kx=5f819d&kaa=aaaaaa&kj=1d1f30&k8=5f819d&kt=p&k9=aaaaaa&k7=1d1f30')
-config.set('url.default_page', 'https://start.duckduckgo.com/?kae=d&k5=2&kp=-2&kaj=m&kao=-1&kav=1&kaq=-1&kam=osm&kap=-1&kak=-1&kax=-1&kay=b&kw=n&ks=n&ko=1&kx=5f819d&kaa=aaaaaa&kj=1d1f30&k8=5f819d&kt=p&k9=aaaaaa&k7=1d1f30')
-config.set('url.searchengines', {"DEFAULT": 'https://start.duckduckgo.com/?q={}&kae=d&k5=2&kp=-2&kaj=m&kao=-1&kav=1&kaq=-1&kam=osm&kap=-1&kak=-1&kax=-1&kay=b&kw=n&ks=n&ko=1&kx=5f819d&kaa=aaaaaa&kj=1d1f30&k8=5f819d&kt=p&k9=aaaaaa&k7=1d1f30'})
+config.set("url.start_pages", "https://start.duckduckgo.com/?kae=d")
+config.set("url.default_page", "https://start.duckduckgo.com/?kae=d")
+config.set("url.searchengines", {"DEFAULT": "https://start.duckduckgo.com/?q={}&kae=d"})
 
 # Tab settings
-config.set('tabs.padding', {"top": 1, "bottom": 2, "left": 5, "right": 5})
-config.set('tabs.indicator.width', 0)
-config.set('tabs.favicons.scale', 1.2)
+config.set("tabs.padding", {"top": 1, "bottom": 2, "left": 5, "right": 5})
+config.set("tabs.indicator.width", 0)
+config.set("tabs.favicons.scale", 1.2)
 
 # Disable case sensitivity for searching
-config.set('search.ignore_case', 'always')
+config.set("search.ignore_case", "always")
 
 # Confirm exit when downloading files
-c.confirm_quit = ['downloads']
+c.confirm_quit = ["downloads"]
 
 # Fonts
 c.fonts.monospace = '"DejaVu Sans Mono"'
-c.fonts.completion.category = '10pt DejaVu Sans Mono'
-c.fonts.completion.entry = '10pt DejaVu Sans Mono'
-c.fonts.tabs = '10pt DejaVu Sans Mono'
-c.fonts.statusbar = '10pt DejaVu Sans Mono'
-c.fonts.downloads = '11pt DejaVu Sans Mono'
-c.fonts.hints = 'bold 10pt DejaVu Sans Mono'
-c.fonts.debug_console = '10pt DejaVu Sans Mono'
+c.fonts.completion.category = "10pt DejaVu Sans Mono"
+c.fonts.completion.entry = "10pt DejaVu Sans Mono"
+c.fonts.tabs = "10pt DejaVu Sans Mono"
+c.fonts.statusbar = "10pt DejaVu Sans Mono"
+c.fonts.downloads = "11pt DejaVu Sans Mono"
+c.fonts.hints = "bold 10pt DejaVu Sans Mono"
+c.fonts.debug_console = "10pt DejaVu Sans Mono"
 
 # Color Scheme
-black =         "#1d1f30"
-white =         "#aaaaaa"
-red =           "#b54848"
-green =         "#7c933f"
-yellow =        "#af774f"
-blue =          "#5f819d"
-magenta =       "#915b8d"
-cyan =          "#5e8d87"
+black = "#181b21"
+white = "#cccccc"
+red = "#cf5252"
+green = "#92ad4a"
+yellow = "#c9895b"
+blue = "#6f97b8"
+magenta = "#ab6ba6"
+cyan = "#6fa69f"
 
-background =    "#1d1f30"
-backgroundAlt = "#2a3145"
-accent =        "#5f819d"
+background = black
+backgroundAlt = "#22262e"
+accent = blue
 
 
 # Set colors from color scheme
@@ -79,7 +77,7 @@ c.colors.completion.item.selected.border.bottom = backgroundAlt
 c.colors.completion.item.selected.border.top = backgroundAlt
 c.colors.completion.item.selected.fg = accent
 c.colors.completion.match.fg = white
-c.colors.completion.odd.bg = background 
+c.colors.completion.odd.bg = background
 c.colors.completion.even.bg = background
 c.colors.completion.scrollbar.bg = background
 c.colors.completion.scrollbar.fg = accent
@@ -143,4 +141,4 @@ c.colors.tabs.selected.even.bg = backgroundAlt
 c.colors.tabs.selected.even.fg = accent
 c.colors.tabs.selected.odd.bg = backgroundAlt
 c.colors.tabs.selected.odd.fg = accent
-#c.colors.webpage.bg = background
+# c.colors.webpage.bg = background

@@ -1,5 +1,5 @@
 ! special
-*.foreground: #aaaaaa
+*.foreground: #cccccc
 *.background: #181b21
 
 ! black
@@ -7,31 +7,31 @@
 *.color8:     #22262e
 
 ! red
-*.color1:     #b54848
-*.color9:     #b54848
+*.color1:     #cf5252
+*.color9:     #cf5252
 
 ! green
-*.color2:     #7c933f
-*.color10:    #7c933f
+*.color2:     #92ad4a
+*.color10:    #92ad4a
 
 ! yellow
-*.color3:     #af774f
-*.color11:    #af774f
+*.color3:     #c9895b
+*.color11:    #c9895b
 
 ! blue
-*.color4:     #5f819d
-*.color12:    #5f819d
+*.color4:     #6f97b8
+*.color12:    #6f97b8
 
 ! magenta
-*.color5:     #915b8d
-*.color13:    #915b8d
+*.color5:     #ab6ba6
+*.color13:    #ab6ba6
 
 ! cyan
-*.color6:     #5e8d87
-*.color14:    #5e8d87
+*.color6:     #6fa69f
+*.color14:    #6fa69f
 
 ! white
-*.color7:     #aaaaaa
-*.color15:    #aaaaaa
+*.color7:     #cccccc
+*.color15:    #cccccc
 
 st.font: DejaVu Sans Mono:pixelsize=15:antialias=true:autohint=true:hintstyle=hintmedium
