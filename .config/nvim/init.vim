@@ -136,6 +136,7 @@ let g:ale_linters = {
 \   'javascript': ['eslint'],
 \   'php': ['php'],
 \   'python': ['pyls', 'flake8'],
+\   'sh': ['shellcheck'],
 \   'vim': ['vint'],
 \}
 let g:ale_fixers = {
