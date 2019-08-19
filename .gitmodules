@@ -1,12 +1,12 @@
 [submodule ".config/zgen"]
 	path = .config/zgen
-	url = https://gitlab.com/dawidpotocki/zgen.git
+	url = https://github.com/dawidpotocki/zgen.git
 [submodule ".config/dmenu"]
 	path = .config/dmenu
-	url = https://gitlab.com/dawidpotocki/dmenu.git
+	url = https://github.com/dawidpotocki/dmenu.git
 [submodule ".config/st"]
 	path = .config/st
-	url = https://gitlab.com/dawidpotocki/st.git
+	url = https://github.com/dawidpotocki/st.git
 [submodule ".config/mutt"]
 	path = .config/mutt
-	url = https://gitlab.com/dawidpotocki/mutt-wizard.git
+	url = https://github.com/dawidpotocki/mutt-wizard.git
