@@ -24,7 +24,6 @@ call plug#begin('~/.config/nvim/bundle')
 	Plug 'https://github.com/editorconfig/editorconfig-vim'
 	Plug 'https://github.com/junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 		Plug 'https://github.com/junegunn/fzf.vim'
-	Plug 'https://github.com/junegunn/goyo.vim'
 	Plug '~/.config/nvim/bundle/i3-vim-syntax'
 	Plug 'https://github.com/itchyny/lightline.vim'
 		Plug '~/.config/nvim/bundle/lightline-biual'
@@ -237,9 +236,6 @@ map <Leader>G :ALEGoToDefinition<CR>
 " Spell-check (English US and Polish)
 map <F6> :setlocal spell! spelllang=en_us<CR>
 map <F7> :setlocal spell! spelllang=pl<CR>
-
-" Toggle Goyo, distraction free mode
-map <F8> :Goyo<CR>
 
 " Toggle Pencil, wrapping text
 map <F9> :PencilToggle<CR>
