@@ -1,6 +1,3 @@
-[submodule ".config/zgen"]
-	path = .config/zgen
-	url = https://github.com/dawidpotocki/zgen.git
 [submodule ".config/dmenu"]
 	path = .config/dmenu
 	url = https://github.com/dawidpotocki/dmenu.git
