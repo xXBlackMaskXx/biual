@@ -24,7 +24,6 @@ call plug#begin('~/.config/nvim/bundle')
 	Plug 'https://github.com/editorconfig/editorconfig-vim'
 	Plug 'https://github.com/junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 		Plug 'https://github.com/junegunn/fzf.vim'
-	Plug '~/.config/nvim/bundle/i3-vim-syntax'
 	Plug 'https://github.com/itchyny/lightline.vim'
 		Plug '~/.config/nvim/bundle/lightline-biual'
 	Plug 'https://github.com/vim-python/python-syntax'
@@ -45,6 +44,7 @@ call plug#begin('~/.config/nvim/bundle')
 	Plug 'https://github.com/tpope/vim-surround'
 	Plug 'https://github.com/tpope/vim-repeat'
 	Plug 'https://github.com/reedes/vim-pencil'
+	Plug 'https://github.com/sheerun/vim-polyglot'
 	Plug 'https://github.com/tpope/vim-speeddating'
 	Plug 'https://github.com/cespare/vim-toml'
 	Plug 'https://github.com/bronson/vim-trailing-whitespace'
@@ -167,6 +167,9 @@ let g:plug_threads = 1
 " vim-pencil
 let g:pencil#textwidth = 88
 let g:pencil#wrapModeDefault = 'soft'
+
+" vim-polygot
+let g:polyglot_disabled = ['markdown']
 
 
 "===================
