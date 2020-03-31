@@ -55,7 +55,7 @@ monitor-strict = false
 
 modules-left   = i3
 modules-center =
-modules-right  = wireless-network | wired-network | battery | pulseaudio simple_mpd clock
+modules-right  = wireless-network | wired-network | battery | pulseaudio | mpd clock
 
 ;tray-position = right
 ;tray-padding = 2
@@ -221,11 +221,11 @@ ramp-volume-3 = ""
 ;~~~~~
 ; MPD
 ;~~~~~
-[module/simple_mpd]
-type = custom/script
+[module/mpd]
+type = internal/mpd
 
-interval = 5
-exec = ~/.script/polybar-mpd.sh
+label-song = "%title% "
+format-paused =
 
 
 ;~~~~~~~~~
