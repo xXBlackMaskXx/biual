@@ -62,7 +62,6 @@ set $ws7 "7: "
 set $ws8 "8: "
 set $ws9 "9: "
 set $ws10 "10: "
-set $ws11 "11: 龜"
 
 
 # ~~~~~~~~~~~~~~~
@@ -251,7 +250,6 @@ bindsym $Mod+Ctrl+7 move container to workspace $ws7
 bindsym $Mod+Ctrl+8 move container to workspace $ws8
 bindsym $Mod+Ctrl+9 move container to workspace $ws9
 bindsym $Mod+Ctrl+0 move container to workspace $ws10
-bindsym $Mod+Ctrl+underscore move container to workspace $ws11
 bindsym $Mod+Shift+1 move container to workspace $ws1; workspace $ws1
 bindsym $Mod+Shift+2 move container to workspace $ws2; workspace $ws2
 bindsym $Mod+Shift+3 move container to workspace $ws3; workspace $ws3
@@ -262,7 +260,6 @@ bindsym $Mod+Shift+7 move container to workspace $ws7; workspace $ws7
 bindsym $Mod+Shift+8 move container to workspace $ws8; workspace $ws8
 bindsym $Mod+Shift+9 move container to workspace $ws9; workspace $ws9
 bindsym $Mod+Shift+0 move container to workspace $ws10; workspace $ws10
-bindsym $Mod+Shift+underscore move container to workspace $ws11; workspace $ws11
 
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -319,9 +316,15 @@ default_orientation horizontal
 #  Application Settings
 # ~~~~~~~~~~~~~~~~~~~~~~
 
-# Tor Browser (WS1)
+# Web Browsing (WS1)
 assign [class="Tor Browser"] workspace $ws1
-for_window [class="Tor Browser"] floating enable
+#for_window [class="Tor Browser"] floating enable
+assign [class="qutebrowser"] workspace $ws1
+assign [class="Firefox"] workspace $ws1
+assign [class="Chromium"] workspace $ws1
+assign [class="Epiphany"] workspace $ws1
+assign [class="Falkon"] workspace $ws1
+assign [class="Midori"] workspace $ws1
 
 # Coding (WS2)
 assign [class="Code - OSS"] workspace $ws2
@@ -354,14 +357,6 @@ assign [instance="ncmpcpp"] workspace $ws9
 # Video (WS10)
 assign [class="obs"] workspace $ws10
 assign [class="vlc"] workspace $ws10
-
-# Clearnet Browsers (WS11)
-assign [class="qutebrowser"] workspace $ws11
-assign [class="Firefox"] workspace $ws11
-assign [class="Chromium"] workspace $ws11
-assign [class="Epiphany"] workspace $ws11
-assign [class="Falkon"] workspace $ws11
-assign [class="Midori"] workspace $ws11
 
 # Scratchpad
 for_window [instance="keepassxc-sp"] move scratchpad
