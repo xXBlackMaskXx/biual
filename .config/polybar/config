@@ -55,7 +55,7 @@ monitor-strict = false
 
 modules-left   = i3
 modules-center =
-modules-right  = wireless-network | wired-network | battery | pulseaudio | mpd clock
+modules-right  = wireless-network | wired-network battery pulseaudio | mpd clock
 
 ;tray-position = right
 ;tray-padding = 2
@@ -162,41 +162,10 @@ format-paused =
 ; Battery
 ;~~~~~~~~~
 [module/battery]
-type = internal/battery
-label-padding = 30
+type = custom/script
 
-; Use $ ls -1 /sys/class/power_supply/
-battery = BAT1
-adapter = AC
-full-at = 98
-poll-interval = 5
-bar-capacity-width = 10
-time-format = %H:%M
-
-format-charging    = <animation-charging> <label-charging>
-format-discharging = <ramp-capacity> <label-discharging>
-format-full        = <ramp-capacity> <label-full>
-
-ramp-capacity-0 = " "
-ramp-capacity-1 = " "
-ramp-capacity-2 = ""
-ramp-capacity-3 = ""
-ramp-capacity-4 = ""
-ramp-capacity-5 = ""
-ramp-capacity-6 = ""
-ramp-capacity-7 = ""
-ramp-capacity-8 = ""
-ramp-capacity-9 = ""
-
-ramp-capacity-0-foreground = ${colors.urgent}
-ramp-capacity-1-foreground = ${colors.urgent}
-
-animation-charging-0 = " "
-animation-charging-1 = " "
-animation-charging-2 = " "
-animation-charging-3 = " "
-animation-charging-4 = " "
-animation-charging-framerate = 750
+interval = 5
+exec = ~/.script/polybar-battery.sh
 
 
 ;~~~~~~~~~~~~~~~~~~~~~~~~~~
