@@ -26,7 +26,7 @@ autoload -U compinit
 zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
-_comp_options+=(globdots) # Include hidden files.
+_comp_options+=(globdots)  # Include hidden files
 
 # Alias completion
 compdef woman=man
@@ -45,15 +45,15 @@ bindkey -M viins '^H' backward-delete-char
 
 # Other bindings
 bindkey '^R' history-incremental-search-backward
-autoload edit-command-line; zle -N edit-command-line # Edit line in $EDITOR with C-e:
+autoload edit-command-line; zle -N edit-command-line  # Edit line in $EDITOR with C-e:
 bindkey '^e' edit-command-line
 
 # Window title
-function xterm_title_precmd () {
+function xterm_title_precmd() {
 	print -Pn -- '\e]2;%n@%m %~\a'
 	[[ "$TERM" == 'screen'* ]] && print -Pn -- '\e_\005{g}%n\005{-}@\005{m}%m\005{-} \005{B}%~\005{-}\e\\'
 }
-function xterm_title_preexec () {
+function xterm_title_preexec() {
 	print -Pn -- '\e]2;%n@%m %~ %# ' && print -n -- "${(q)1}\a"
 	[[ "$TERM" == 'screen'* ]] && { print -Pn -- '\e_\005{g}%n\005{-}@\005{m}%m\005{-} \005{B}%~\005{-} %# ' && print -n -- "${(q)1}\e\\"; }
 }
