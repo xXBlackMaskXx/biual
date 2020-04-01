@@ -14,13 +14,13 @@
 
 [colors]
 background = ${xrdb:background}
+background-alt = ${xrdb:color8}
 foreground = ${xrdb:color4}
 ;foreground = ${xrdb:foreground}
 moderate = ${xrdb:color3}
 urgent = ${xrdb:color1}
 
 black = ${xrdb:color0}
-darkgrey = ${xrdb:color8}
 red = ${xrdb:color1}
 green = ${xrdb:color2}
 yellow = ${xrdb:color3}
@@ -101,7 +101,7 @@ label-mode-padding = 2
 
 label-focused = %index% %name%
 label-focused-padding = 2
-label-focused-background = ${colors.darkgrey}
+label-focused-background = ${colors.background-alt}
 label-focused-foreground = ${colors.foreground}
 label-focused-underline  = ${colors.foreground}
 label-focused-overline  = ${colors.foreground}
