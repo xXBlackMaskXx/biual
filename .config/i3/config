@@ -146,8 +146,8 @@ bindsym $Mod+Shift+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -f -i"
 
 # Applications
 bindsym $Mod+Return exec --no-startup-id $TERMINAL
-bindsym $Mod+f exec --no-startup-id $HOME/.local/share/tor-browser/Browser/start-tor-browser
-bindsym $Mod+Shift+f exec --no-startup-id $BROWSER
+bindsym $Mod+f exec --no-startup-id $BROWSER
+bindsym $Mod+Shift+f exec --no-startup-id ~/.script/dmenu-browser.sh
 bindsym $Mod+r exec --no-startup-id $TERMINAL -n 'ncmpcpp' -e 'ncmpcpp'
 bindsym $Mod+t exec --no-startup-id $HOME/.script/dmenu-messenger.sh
 bindsym $Mod+b exec --no-startup-id blueman-manager
