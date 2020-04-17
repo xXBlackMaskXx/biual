@@ -137,8 +137,8 @@ bindsym $Mod+Shift+r restart
 bindsym $Mod+Shift+q kill
 
 # Hide polybar
-bindsym $Mod+bracketleft exec --no-startup-id killall -9 polybar
 bindsym $Mod+bracketright exec --no-startup-id .config/polybar/launch.sh
+bindsym $Mod+Shift+braceright exec --no-startup-id killall polybar
 
 # Launcher
 bindsym $Mod+d exec --no-startup-id dmenu_run -f -i
