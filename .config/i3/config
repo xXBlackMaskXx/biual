@@ -45,12 +45,6 @@ set $Mod Mod4
 # Moe key (Alt)
 set $Moe Mod1
 
-# Direction keys
-set $up k
-set $down j
-set $left h
-set $right l
-
 # Workspaces Icons
 set $ws1 "1: "
 set $ws2 "2: "
@@ -189,8 +183,8 @@ bindsym $Mod+Shift+s exec --no-startup-id ~/.script/i3-corner.sh 3
 
 
 # Audio - Vim bindings
-bindsym $Mod+$Moe+$up exec --no-startup-id pamixer -i 1
-bindsym $Mod+$Moe+$down exec --no-startup-id pamixer -d 1
+bindsym $Mod+$Moe+k exec --no-startup-id pamixer -i 1
+bindsym $Mod+$Moe+j exec --no-startup-id pamixer -d 1
 # Audio - XF86 bindings
 bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer -i 1
 bindsym XF86AudioLowerVolume exec --no-startup-id pamixer -d 1
@@ -202,8 +196,8 @@ bindsym XF86AudioStop  exec --no-startup-id mpc stop
 bindsym XF86AudioPause exec --no-startup-id mpc pause
 
 # Backlight - Vim bindings
-bindsym $Mod+$Moe+$right exec --no-startup-id light -A 1
-bindsym $Mod+$Moe+$left exec --no-startup-id light -U 1
+bindsym $Mod+$Moe+l exec --no-startup-id light -A 1
+bindsym $Mod+$Moe+h exec --no-startup-id light -U 1
 # Backlight - XF86 bindings
 bindsym XF86MonBrightnessUp exec --no-startup-id light -A 1
 bindsym XF86MonBrightnessDown exec --no-startup-id light -U 1
@@ -230,8 +224,8 @@ bindsym $Mod+0 workspace $ws10
 bindsym $Mod+minus workspace $ws11
 
 # Next/Previous Workspace
-bindsym $Mod+$down workspace next
-bindsym $Mod+$up workspace prev
+bindsym $Mod+j workspace next
+bindsym $Mod+k workspace prev
 
 # Back and forth
 bindsym $Mod+Tab workspace back_and_forth
@@ -270,28 +264,28 @@ bindsym $Mod+Shift+space floating toggle
 focus_follows_mouse no
 
 # Change focus
-bindsym $Moe+$left  focus left
-bindsym $Moe+$down  focus down
-bindsym $Moe+$up    focus up
-bindsym $Moe+$right focus right
+bindsym $Moe+h focus left
+bindsym $Moe+j focus down
+bindsym $Moe+k focus up
+bindsym $Moe+l focus right
 
 # Focus to parent/child
 bindsym $Moe+p focus parent
 bindsym $Moe+c focus child
 
 # Move focused window
-bindsym $Mod+Shift+$left  move left  40px
-bindsym $Mod+Shift+$down  move down  40px
-bindsym $Mod+Shift+$up    move up    40px
-bindsym $Mod+Shift+$right move right 40px
+bindsym $Mod+Shift+h move left  40px
+bindsym $Mod+Shift+j move down  40px
+bindsym $Mod+Shift+k move up    40px
+bindsym $Mod+Shift+l move right 40px
 # Mod + Mouse
 floating_modifier $Mod
 
 # Resize focused window
-bindsym $Mod+Ctrl+$up    resize shrink height 20 px or 2 ppt
-bindsym $Mod+Ctrl+$down  resize grow   height 20 px or 2 ppt
-bindsym $Mod+Ctrl+$left  resize shrink width  20 px or 2 ppt
-bindsym $Mod+Ctrl+$right resize grow   width  20 px or 2 ppt
+bindsym $Mod+Ctrl+k resize shrink height 20 px or 2 ppt
+bindsym $Mod+Ctrl+j resize grow   height 20 px or 2 ppt
+bindsym $Mod+Ctrl+h resize shrink width  20 px or 2 ppt
+bindsym $Mod+Ctrl+l resize grow   width  20 px or 2 ppt
 
 # Switch to new window on other workspace
 #focus_on_window_activation   focus
