@@ -1,14 +1,11 @@
-#!/usr/bin/env sh
-# Give dmenu list of all unicode characters to copy.
-# Shows the selected character in dunst if running.
+#!/bin/sh
 
-xclip -h &> /dev/null || exit
+command -v xclip || exit
 
-CHOSEN=$(sed '0,/^__DATA__$/d' "$0" | dmenu -i -l 10 -p 'Unicode')
-
+CHOSEN="$(sed '0,/^__DATA__$/d' "$0" | awk '!seen[$0]++' | dmenu -i -l 15 -p 'Unicode')"
 [ "$CHOSEN" != "" ] || exit
 
-CHOSEN=$(printf "$CHOSEN" | sed "s/ .*//")
+CHOSEN=$(printf "%s" "$CHOSEN" | sed "s/ .*//")
 echo "$CHOSEN" | tr -d '\n' | xclip -selection clipboard
 notify-send "'$CHOSEN' copied to clipboard."
 
