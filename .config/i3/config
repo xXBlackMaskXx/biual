@@ -168,9 +168,6 @@ bindsym $Mod+n exec --no-startup-id redshift -O 3500 -b 0.8
 bindsym $Mod+Shift+n exec --no-startup-id redshift -x
 bindsym $Mod+g exec --no-startup-id gcolor2
 
-# Compton
-bindsym $Mod+c exec --no-startup-id compton
-bindsym $Mod+Shift+c exec --no-startup-id killall -9 compton
 
 # Logout
 bindsym $Mod+x exec --no-startup-id ~/.script/dmenu-logout.sh
