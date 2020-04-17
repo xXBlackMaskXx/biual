@@ -110,9 +110,6 @@ exec --no-startup-id dunst
 # Music daemon
 exec --no-startup-id mpd
 
-# If you have a numpad you may want to enable this and install numlockx
-#exec --no-startup-id numlockx
-
 # Keyring for storing saved passwords
 exec --no-startup-id gnome-keyring-daemon --start --components=pkcs11,secrets,ssh
 
