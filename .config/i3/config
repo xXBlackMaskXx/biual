@@ -221,7 +221,6 @@ bindsym $Mod+7 workspace $ws7
 bindsym $Mod+8 workspace $ws8
 bindsym $Mod+9 workspace $ws9
 bindsym $Mod+0 workspace $ws10
-bindsym $Mod+minus workspace $ws11
 
 # Next/Previous Workspace
 bindsym $Mod+j workspace next
