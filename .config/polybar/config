@@ -58,7 +58,6 @@ modules-center =
 modules-right  = wireless-network | wired-network battery pulseaudio | mpd clock
 
 ;tray-position = right
-;tray-padding = 2
 
 width = 100%
 height = 34
