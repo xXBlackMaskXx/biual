@@ -320,6 +320,7 @@ assign [class="Code - OSS"] workspace $ws2
 assign [class="TelegramDesktop"] workspace $ws4
 assign [class="Riot"] workspace $ws4
 assign [class="Signal"] workspace $ws4
+assign [class="Keybase"] workspace $ws4
 assign [class="Wire"] workspace $ws4
 
 # Mail (WS5)
@@ -336,6 +337,7 @@ assign [class="Inkscape"] workspace $ws7
 
 # Gaming
 assign [class="retroarch"] workspace $ws8
+assign [class="Steam"] workspace $ws8
 
 # Audio (WS9)
 assign [class="Rhythmbox"] workspace $ws9
@@ -344,6 +346,7 @@ assign [instance="ncmpcpp"] workspace $ws9
 # Video (WS10)
 assign [class="obs"] workspace $ws10
 assign [class="vlc"] workspace $ws10
+assign [class="mpv"] workspace $ws10
 
 # Scratchpad
 for_window [instance="keepassxc-sp"] move scratchpad
@@ -352,6 +355,7 @@ for_window [instance="keepassxc-sp"] resize set 800 600
 
 # Other
 for_window [class="Gsimplecal"] floating enable
+for_window [window_role="PictureInPicture"] sticky enable
 
 
 # vim: filetype=i3
