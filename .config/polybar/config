@@ -55,7 +55,7 @@ monitor-strict = false
 
 modules-left   = i3
 modules-center =
-modules-right  = wireless-network | wired-network battery pulseaudio | mpd clock
+modules-right  = covid-19 | wireless-network | wired-network battery pulseaudio | mpd clock
 
 ;tray-position = right
 
@@ -203,6 +203,16 @@ format-disconnected = <label-disconnected>
 label-connected =  %local_ip%
 label-disconnected =  disconnected
 format-connected-foreground = ${colors.foreground}
+
+
+;~~~~~~~~~~
+; COVID-19
+;~~~~~~~~~~
+[module/covid-19]
+type = custom/script
+
+interval = 1800
+exec = ~/.script/polybar-covid-19.sh
 
 
 ;~~~~~~~~~~~
