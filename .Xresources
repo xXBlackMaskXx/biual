@@ -4,7 +4,7 @@
 
 ! black
 *.color0:     #181b21
-*.color8:     #22262e
+*.color8:     #252933
 
 ! red
 *.color1:     #cf5252
@@ -23,8 +23,8 @@
 *.color12:    #6f97b8
 
 ! magenta
-*.color5:     #ab6ba6
-*.color13:    #ab6ba6
+*.color5:     #966bab
+*.color13:    #966bab
 
 ! cyan
 *.color6:     #6fa69f

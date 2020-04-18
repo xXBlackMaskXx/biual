@@ -19,10 +19,10 @@ let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': 
 " let s:p.mode.position    [[ s:foreground, s:background ], [ s:foreground, s:background ]]
 
 " Normal
-let s:p.normal.left =      [[ s:blue, s:darkgrey ], [ s:blue, s:black ], [ s:blue, s:black ]]
-let s:p.normal.middle =    [[ s:blue, s:black ],    [ s:blue, s:black ], [ s:blue, s:black ]]
-let s:p.normal.right =     [[ s:blue, s:darkgrey ], [ s:blue, s:black ], [ s:blue, s:black ]]
-let s:p.normal.error =     [[ s:blue, s:darkgrey ]]
+let s:p.normal.left =      [[ s:magenta, s:darkgrey ], [ s:magenta, s:black ], [ s:magenta, s:black ]]
+let s:p.normal.middle =    [[ s:magenta, s:black ],    [ s:magenta, s:black ], [ s:magenta, s:black ]]
+let s:p.normal.right =     [[ s:magenta, s:darkgrey ], [ s:magenta, s:black ], [ s:magenta, s:black ]]
+let s:p.normal.error =     [[ s:red, s:darkgrey ]]
 let s:p.normal.warning =   [[ s:black, s:yellow ]]
 
 " Inactive
@@ -31,25 +31,25 @@ let s:p.normal.warning =   [[ s:black, s:yellow ]]
 "let s:p.inactive.right =   [[ s:white, s:black ], [ s:white, s:black ], [ s:white, s:black ]]
 
 " Insert
-"let s:p.insert.left =      [[ s:blue, s:darkgrey ], [ s:blue, s:black ], [ s:blue, s:black ]]
-"let s:p.insert.middle =    [[ s:blue, s:black ],    [ s:blue, s:black ], [ s:blue, s:black ]]
-"let s:p.insert.right =     [[ s:blue, s:darkgrey ], [ s:blue, s:black ], [ s:blue, s:black ]]
+"let s:p.insert.left =      [[ s:magenta, s:darkgrey ], [ s:magenta, s:black ], [ s:magenta, s:black ]]
+"let s:p.insert.middle =    [[ s:magenta, s:black ],    [ s:magenta, s:black ], [ s:magenta, s:black ]]
+"let s:p.insert.right =     [[ s:magenta, s:darkgrey ], [ s:magenta, s:black ], [ s:magenta, s:black ]]
 
 " Replace
-"let s:p.replace.left =     [[ s:blue, s:darkgrey ], [ s:blue, s:black ], [ s:blue, s:black ]]
-"let s:p.replace.middle =   [[ s:blue, s:black ],    [ s:blue, s:black ], [ s:blue, s:black ]]
-"let s:p.replace.right =    [[ s:blue, s:darkgrey ], [ s:blue, s:black ], [ s:blue, s:black ]]
+"let s:p.replace.left =     [[ s:magenta, s:darkgrey ], [ s:magenta, s:black ], [ s:magenta, s:black ]]
+"let s:p.replace.middle =   [[ s:magenta, s:black ],    [ s:magenta, s:black ], [ s:magenta, s:black ]]
+"let s:p.replace.right =    [[ s:magenta, s:darkgrey ], [ s:magenta, s:black ], [ s:magenta, s:black ]]
 
 " Visual
-"let s:p.visual.left =      [[ s:blue, s:darkgrey ], [ s:blue, s:black ], [ s:blue, s:black ]]
-"let s:p.visual.middle =    [[ s:blue, s:black ],    [ s:blue, s:black ], [ s:blue, s:black ]]
-"let s:p.visual.right =     [[ s:blue, s:darkgrey ], [ s:blue, s:black ], [ s:blue, s:black ]]
+"let s:p.visual.left =      [[ s:magenta, s:darkgrey ], [ s:magenta, s:black ], [ s:magenta, s:black ]]
+"let s:p.visual.middle =    [[ s:magenta, s:black ],    [ s:magenta, s:black ], [ s:magenta, s:black ]]
+"let s:p.visual.right =     [[ s:magenta, s:darkgrey ], [ s:magenta, s:black ], [ s:magenta, s:black ]]
 
 " Tabs
-let s:p.tabline.left =     [[ s:blue, s:black ]]
-let s:p.tabline.tabsel =   [[ s:blue, s:darkgrey ]]
-let s:p.tabline.middle =   [[ s:blue, s:black ]]
-let s:p.tabline.right =    [[ s:blue, s:black ]]
+let s:p.tabline.left =     [[ s:magenta, s:black ]]
+let s:p.tabline.tabsel =   [[ s:magenta, s:darkgrey ]]
+let s:p.tabline.middle =   [[ s:magenta, s:black ]]
+let s:p.tabline.right =    [[ s:magenta, s:black ]]
 
 
 let g:lightline#colorscheme#biual#palette = lightline#colorscheme#flatten(s:p)

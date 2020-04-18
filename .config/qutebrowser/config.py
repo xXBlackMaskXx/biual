@@ -58,12 +58,12 @@ red = "#cf5252"
 green = "#92ad4a"
 yellow = "#c9895b"
 blue = "#6f97b8"
-magenta = "#ab6ba6"
+magenta = "#966bab"
 cyan = "#6fa69f"
 
 background = black
-backgroundAlt = "#22262e"
-accent = blue
+backgroundAlt = "#252933"
+accent = magenta
 
 
 # Set colors from color scheme

@@ -15,8 +15,7 @@
 [colors]
 background = ${xrdb:background}
 background-alt = ${xrdb:color8}
-foreground = ${xrdb:color4}
-;foreground = ${xrdb:foreground}
+foreground = ${xrdb:color5}
 moderate = ${xrdb:color3}
 urgent = ${xrdb:color1}
 

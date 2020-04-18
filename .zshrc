@@ -13,7 +13,7 @@ source ~/.shellrc
 # Basic stuff
 autoload -U colors && colors
 setopt prompt_subst
-PROMPT='%B%F{blue}%n%F{blue}@%F{blue}%m%f%b in %B%F{green}%~%f%b $(git_status)
+PROMPT='%B%F{magenta}%n%F{magenta}@%F{magenta}%m%f%b in %B%F{cyan}%~%f%b $(git_status)
 %f%b%(?:$ :%F{red}$ )%f'
 setopt autocd
 zstyle ':completion:*' rehash true  # Look for new completions

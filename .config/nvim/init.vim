@@ -71,8 +71,8 @@ set background=light
 hi LineNr           ctermfg=3
 hi CursorLineNr     ctermfg=3
 hi Statement        ctermfg=3
-hi Visual                       ctermbg=8
-hi Search                       ctermbg=8
+hi Visual           ctermfg=0   ctermbg=3
+hi Search           ctermfg=0   ctermbg=3
 hi SpellBad         ctermfg=0   ctermbg=1   cterm=underline
 hi SpellCap         ctermfg=0   ctermbg=2   cterm=underline
 hi SpellRare        ctermfg=0   ctermbg=3   cterm=underline

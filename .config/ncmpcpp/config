@@ -105,7 +105,7 @@ alternative_header_first_line_format = $b$1$aqqu$/a$9 {%t}|{%f} $1$atqq$/a$9$/b
 alternative_header_second_line_format = {{$4$b%a$/b$9}{ - $7%b$9}{ ($4%y$9)}}|{%D}
 current_item_prefix = $(cyan)$r$b
 current_item_suffix = $/r$(end)$/b
-current_item_inactive_column_prefix = $(blue)$r
+current_item_inactive_column_prefix = $(magenta)$r
 current_item_inactive_column_suffix = $/r$(end)
 now_playing_prefix = $b
 now_playing_suffix = $/b
@@ -165,7 +165,7 @@ modified_item_prefix = $3> $9
 ##   available.
 ##
 
-song_columns_list_format = (15)[magenta]{a} (50)[white]{t|f:Title} (7f)[blue]{l}
+song_columns_list_format = (15)[magenta]{a} (50)[white]{t|f:Title} (7f)[magenta]{l}
 
 
 ##### various settings #####
@@ -335,18 +335,18 @@ use_console_editor = yes
 
 colors_enabled = yes
 empty_tag_color = magenta
-header_window_color = blue
+header_window_color = magenta
 volume_color = default
 state_line_color = default
 state_flags_color = default:b
-main_window_color = blue
-color1 = blue
+main_window_color = magenta
+color1 = magenta
 color2 = magenta
 progressbar_color = black:b
-progressbar_elapsed_color = blue:b
-statusbar_color = blue
-statusbar_time_color = blue
+progressbar_elapsed_color = magenta:b
+statusbar_color = magenta
+statusbar_time_color = magenta
 player_state_color = default:b
-alternative_ui_separator_color = blue
-window_border_color = blue
-active_window_border = blue
+alternative_ui_separator_color = magenta
+window_border_color = magenta
+active_window_border = magenta
