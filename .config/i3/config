@@ -38,7 +38,7 @@ client.placeholder      $bg         $bg         $blue       $bg         $bg
 client.background       $bg
 
 # Font
-font pango:DejaVu Sans Mono 11
+font pango:DejaVu Sans Mono 12
 
 # Mod key (Super)
 set $Mod Mod4
