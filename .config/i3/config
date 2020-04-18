@@ -176,16 +176,6 @@ bindsym Print exec --no-startup-id ~/.script/dmenu-screenshot.sh
 
 # Center floating app
 bindsym $Mod+s move position center
-# Move to corner
-bindsym $Mod+Shift+s exec --no-startup-id ~/.script/i3-corner.sh 3
-
-
-# sndio
-# bindsym $Mod+$Moe+$up exec --no-startup-id ~/.script/sndio.sh up 1
-# bindsym $Mod+$Moe+$down exec --no-startup-id ~/.script/sndio.sh down 1
-# bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.script/sndio.sh up 1
-# bindsym XF86AudioLowerVolume exec --no-startup-id ~/.script/sndio.sh down 1
-
 
 # Audio - Vim bindings
 bindsym $Mod+$Moe+k exec --no-startup-id pamixer -i 1
