@@ -206,6 +206,9 @@ bindsym XF86MonBrightnessDown exec --no-startup-id light -U 1
 # Fullscreen
 bindsym F11 fullscreen
 
+# Toggle tray
+bindsym $Mod+backslash exec --no-startup-id ~/.script/polybar-toggle-tray.sh
+
 
 # ~~~~~~~~~~~~~~~~~~~~
 #  Workspace Bindings
