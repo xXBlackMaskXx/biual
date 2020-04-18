@@ -125,6 +125,9 @@ exec --no-startup-id syncthing -no-browser
 # Scratchpad
 exec --no-startup-id keepassxc -name keepassxc-sp
 
+# Networking
+exec --no-startup-id nm-applet
+
 
 # ~~~~~~~~~~~~~
 #  Keybindings
