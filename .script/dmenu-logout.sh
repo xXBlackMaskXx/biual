@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 ANS="$(printf "Lock\nShutdown\nReboot\nExit" | dmenu -i -p 'System')"
 case "$ANS" in
