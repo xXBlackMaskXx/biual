@@ -183,6 +183,9 @@ bindsym $Mod+Shift+s exec --no-startup-id ~/.script/i3-corner.sh 3
 # Audio - Vim bindings
 bindsym $Mod+$Moe+k exec --no-startup-id pamixer -i 1
 bindsym $Mod+$Moe+j exec --no-startup-id pamixer -d 1
+bindsym $Mod+Shift+greater exec --no-startup-id mpc next
+bindsym $Mod+Shift+less exec --no-startup-id mpc prev
+bindsym $Mod+a exec --no-startup-id mpc toggle
 # Audio - XF86 bindings
 bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer -i 1
 bindsym XF86AudioLowerVolume exec --no-startup-id pamixer -d 1
@@ -359,4 +362,4 @@ for_window [class="Gsimplecal"] floating enable
 for_window [window_role="PictureInPicture"] sticky enable
 
 
-# vim: filetype=i3
+# vim: filetype=i3config
