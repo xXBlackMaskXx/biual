@@ -88,6 +88,7 @@ bindsym $Mod+Shift+o border none
 exec --no-startup-id setxkbmap pl -option 'caps:ctrl_modifier'
 exec --no-startup-id xcape -e 'Caps_Lock=Escape'
 exec --no-startup-id xmodmap -e "keysym Menu = Super_R"
+exec --no-startup-id ~/.script/toggle-trackpad.sh disable
 
 # Load .Xresources configs
 exec_always --no-startup-id xrdb -load ~/.Xresources
