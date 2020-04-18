@@ -163,6 +163,9 @@ bindsym $Mod+Shift+n exec --no-startup-id redshift -x
 bindsym $Mod+g exec --no-startup-id gcolor2
 bindsym $Mod+v exec --no-startup-id xclip -o -sel clip | xargs mpv
 
+# CPU/Fan speed
+bindsym $Mod+i exec --no-startup-id ~/.script/dmenu-cpu.sh
+bindsym $Mod+Shift+i exec --no-startup-id ~/.script/dmenu-fan.sh
 
 # Logout
 bindsym $Mod+x exec --no-startup-id ~/.script/dmenu-logout.sh
