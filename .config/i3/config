@@ -158,6 +158,7 @@ bindsym $Mod+Shift+m exec --no-startup-id ~/.config/mutt/etc/mailsync.sh
 bindsym $Mod+n exec --no-startup-id redshift -O 3500 -b 0.8
 bindsym $Mod+Shift+n exec --no-startup-id redshift -x
 bindsym $Mod+g exec --no-startup-id gcolor2
+bindsym $Mod+v exec --no-startup-id xclip -o -sel clip | xargs mpv
 
 
 # Logout
