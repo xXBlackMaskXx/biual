@@ -50,6 +50,8 @@ alias pastebin-txt='curl -F c=@- https://ptpb.pw/ <<<'
 alias pastebin-file='curl -F c=@- -F p=1 https://ptpb.pw/ <'
 
 # youtube-dl aliases
+alias youtube-dl='youtube-dl -o "%(title)s.%(ext)s"'
+alias yt-dl='youtube-dl -o "%(title)s.%(ext)s"'
 alias yt-video='youtube-dl -f bestvideo -o "%(title)s.%(ext)s"'
 alias yt-webm='youtube-dl -f webm -o "%(title)s.%(ext)s"'
 alias yt-audio='youtube-dl -f bestaudio -o "%(title)s.%(ext)s"'
