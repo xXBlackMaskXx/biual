@@ -4,7 +4,8 @@
 # with a name of your country
 
 download() {
-	location="countries/$(cat ~/.config/covid-19/location 2>/dev/null)" || location="all"
+	[ -z "$XDG_CONFIG_HOME" ] && XDG_CONFIG_HOME="$HOME/.config"
+	location="countries/$(cat "$XDG_CONFIG_HOME"/covid-19/location 2>/dev/null)" || location="all"
 	stats="$(curl -s "https://corona.lmao.ninja/v2/$location")"
 	# Sometimes website doesn't work and will return Cloudflare HTML, which
 	# will cause `jq` to fail and show error, instead we are going to return
