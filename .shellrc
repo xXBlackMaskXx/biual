@@ -31,7 +31,6 @@ export SUDO_PROMPT="$(printf "\033[1;31m")[sudo]$(printf "\033[0m") password for
 # Aliases
 alias mw="~/.config/mutt/mutt-wizard.sh"
 alias ls='ls --color=auto --group-directories-first'
-alias nc='ncmpcpp'
 alias ra='ranger'
 alias vi='nvim'
 alias vim='nvim'
@@ -46,10 +45,6 @@ alias torsocks='torsocks '
 # cURL aliases
 alias wttr='curl wttr.in'
 alias weather='curl wttr.in'
-alias surl='curl -F c=@- https://ptpb.pw/u <<<'
-alias shorturl='curl -F c=@- https://ptpb.pw/u <<<'
-alias pastebin-txt='curl -F c=@- https://ptpb.pw/ <<<'
-alias pastebin-file='curl -F c=@- -F p=1 https://ptpb.pw/ <'
 
 # youtube-dl aliases
 alias youtube-dl='youtube-dl -o "%(title)s.%(ext)s"'
